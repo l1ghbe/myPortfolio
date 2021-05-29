@@ -68,6 +68,9 @@ function scrollFunction() {
     }
 }
 
+
+
+
 function selectProgress(inner, innerValue, innerWidth, color = '#00EEFF') {
     progressName.innerHTML = inner;
     progressValue.innerHTML = innerValue;
@@ -237,7 +240,11 @@ const settingsColor = document.querySelector('.main__settings-colors')
 const buttonDefault = document.querySelector('.main__colors-default')
 const buttonDark = document.querySelector('.main__colors-dark')
 const buttonLight = document.querySelector('.main__colors-light')
+const theme = localStorage.getItem('theme')
 
+if (theme) {
+    document.body.classList.add(theme)
+}
 
 
 settingsIcon.addEventListener('click', () => {
@@ -249,16 +256,19 @@ buttonDefault.addEventListener('click', () => {
     document.body.classList.add('default')
     document.body.classList.remove('dark')
     document.body.classList.remove('light')
+    localStorage.setItem('theme', 'default')
 })
 buttonDark.addEventListener('click', () => {
     document.body.classList.remove('default')
     document.body.classList.add('dark')
     document.body.classList.remove('light')
+    localStorage.setItem('theme', 'dark')
 })
 buttonLight.addEventListener('click', () => {
     document.body.classList.remove('default')
     document.body.classList.remove('dark')
     document.body.classList.add('light')
+    localStorage.setItem('theme', 'light')
 })
 
 

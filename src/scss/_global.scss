@@ -137,10 +137,7 @@ body {
                 background-color: #fff;
             }
         }
-        .contact-wrapper {
-            box-shadow: 13px 13px 20px #cbced1,
-              -13px -13px 20px #ffffff;
-        }
+        
         .about__card {
             background: rgba(255,255,255,0.7);
         }
@@ -226,6 +223,36 @@ body {
             .footer-contacts__mail {
                 color: #fff;
             }
+        }
+        .contact-wrapper {
+            background: rgba(#fff, 0.7);
+            
+        }
+
+        .form__body input,
+        .form__body textarea {
+            border-color: #111;
+        }
+        .form__label,
+        .form__textarea-label {
+            color: #111;
+            background-color: #fff;
+        }
+        .form__input:focus + .form__label,
+        .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label{
+            color: #111;
+            font-weight: bold;
+        }
+        .form__textarea:focus + .form__textarea-label,
+        .form__textarea:not(:placeholder-shown).form__textarea:not(:focus) + .form__textarea-label {
+            color: #111;
+            font-weight: bold;
+        }
+        .works-slide__row-text-title::after {
+            filter: invert(1);
+        }
+        .lg-submit {
+            border: 2px solid #111;
         }
 
     }

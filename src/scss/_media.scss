@@ -517,6 +517,11 @@
         border: 1px solid #fff;
         box-shadow: 0 0 15px #9090ff;
     }
+    body.dark {
+        .main__row-text {
+            box-shadow: none;
+        }
+    }
     .main__row-img {
         position: absolute;
         top: 50%;
