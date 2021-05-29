@@ -206,6 +206,28 @@
     .bubble {
         display: none !important;
     }
+    body.light {
+        .dropbtn {
+            filter: invert(1);
+        }
+        .header-fixed {
+            .dropbtn-span {
+                filter: invert(0);
+            }
+        }
+        .menu.active {
+            
+            .menu__list-link {
+                color: #fff;
+            }
+            .menu__list-item::after {
+                background-color: #fff;
+            }
+        }
+
+       
+        
+    }
     
 }
 @media (max-width: 768px) {

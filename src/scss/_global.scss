@@ -14,8 +14,8 @@ body {
     &.dark {
         background: $bgdark;
         .header-fixed {
-            background-color: rgba(0,0,0,0.6);
-            backdrop-filter: blur(15px);
+            background-color: rgba(0,0,0,0.8);
+            // backdrop-filter: blur(15px);
         }
         .main {
             &::before,
@@ -46,6 +46,10 @@ body {
                 background-color: #ce0d0d;
             }
         }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #ce0d0d;
+        }
         
         .lightning:hover {
             transition: .3s;
@@ -75,23 +79,62 @@ body {
         .swiper-pagination-bullet {
             background-color: #ce0d0d;
         }
+        .menu,
+        .menu.active {
+            background-color: rgba(0,0,0,0.8);
+        }
     }
     &.light {
         background: $bglight;
-        // filter: invert(1)
         a, h1, h2, h3, h4, p, span {
             color: black;
         }
+        .title__text::after {
+            background-color: #111;
+        }
+        .header__burger {
+            filter: invert(1);
+        }
+        .header__burger-btn.active {
+            filter: invert(1)
+        }
+        .menu.active {
+            background-color: rgba($ddblue,0.85);
+        }
+        .skills__row-text-full.active {
+            filter: invert(1);
+        }
+        .swiper-pagination-bullet {
+            background-color: #111;
+        }
+        .dropdown-content a:hover {
+            background-color: $circleslight;
+        }
+
+
         .header-fixed {
-            background: #111;
-            a, h1, h2, h3, img, span, i {
+            background: $circleslight;
+            // a, h1, h2, h3, img, span, i, .menu__list-item::after {
+            //     filter: invert(1);
+            // }
+            .logotype,
+            // .menu__list-item,
+            .dropbtn,
+            .header__burger-btn {
                 filter: invert(1);
             }
-            .dropdown img{
-                filter: invert(0);
+            .dropdown-content {
+                background-color: #111;
+                a {
+                    filter: invert(0);
+
+                }
             }
-            .dropdown-content a {
-                color: #fff
+            .menu__list-link {
+                color: #fff;
+            }
+            .menu__list-item::after {
+                background-color: #fff;
             }
         }
         .contact-wrapper {
@@ -108,7 +151,11 @@ body {
             stroke: black
         } 
         .dropdown-content {
-            filter: invert(1);
+            background-color: #111;
+            a {
+                color: $white;
+
+            }
         }
         .btn {
             border-color: black;
@@ -129,6 +176,55 @@ body {
             background-color: black;
             .main__colors-dark {
                 border: 2px solid #fff;
+            }
+        }
+        .btn::after {
+            background-color: $circleslight;
+        }
+        .btn:hover {
+            color: white
+        }
+        .main {
+            &::before,
+            &::after {
+                background-color: $circleslight;
+            }
+        }
+        .about {
+            .circle-1,
+            .circle-2 {
+                background-color: $circleslight;
+            }
+
+        }
+        .skills {
+            &::after {
+                background-color: $circleslight;
+            }
+        }
+        .works {
+            &::after {
+                background-color: $circleslight;
+            }
+        }
+        .contact {
+            .circle-3,
+            .circle-4 {
+                background-color: $circleslight;
+            }
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #111;
+        }
+
+        .footer {
+            background-color: $circleslight;
+            .footer-text {
+                color: #fff;
+            }
+            .footer-contacts__mail {
+                color: #fff;
             }
         }
 
