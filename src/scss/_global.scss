@@ -15,6 +15,9 @@ body {
         background: $bgdark;
         .header-fixed {
             background-color: rgba(0,0,0,0.8);
+            .menu.active {
+                background-color: rgba(0,0,0,0.8);
+            }
             // backdrop-filter: blur(15px);
         }
         .main {
@@ -79,7 +82,7 @@ body {
         .swiper-pagination-bullet {
             background-color: #ce0d0d;
         }
-        .menu,
+        // .menu,
         .menu.active {
             background-color: rgba(0,0,0,0.8);
         }
