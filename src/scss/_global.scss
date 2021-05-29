@@ -10,7 +10,132 @@
 }
 
 body {
-    background: transparent linear-gradient(180deg, #444491 0%, #19195C 35%, #01013F 60%, #19195C 90%, #444491 100%) 0% 0% no-repeat padding-box;
+    background: $grad-blue;
+    &.dark {
+        background: $bgdark;
+        .header-fixed {
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(15px);
+        }
+        .main {
+            &::before,
+            &::after {
+                background-color: #ce0d0d;
+            }
+        }
+        .about {
+            .circle-1,
+            .circle-2 {
+                background-color: #ce0d0d;
+            }
+
+        }
+        .skills {
+            &::after {
+                background-color: #ce0d0d;
+            }
+        }
+        .works {
+            &::after {
+                background-color: #ce0d0d;
+            }
+        }
+        .contact {
+            .circle-3,
+            .circle-4 {
+                background-color: #ce0d0d;
+            }
+        }
+        
+        .lightning:hover {
+            transition: .3s;
+            #lightning {
+                transition: .3s;
+                stroke: #ce0d0d;
+            }
+        }
+        .dropdown-content a:hover {
+            background-color: #ce0d0d;
+        }
+        
+
+        .footer {
+            background-color: black;
+        }
+        .form__label,
+        .form__textarea-label {
+            background-color: #111;
+        }
+        .btn::after {
+            background: rgba(#ce0d0d, 0.7);
+        }
+        .progress-bar {
+            border: 2px solid #fff;
+        }
+        .swiper-pagination-bullet {
+            background-color: #ce0d0d;
+        }
+    }
+    &.light {
+        background: $bglight;
+        // filter: invert(1)
+        a, h1, h2, h3, h4, p, span {
+            color: black;
+        }
+        .header-fixed {
+            background: #111;
+            a, h1, h2, h3, img, span, i {
+                filter: invert(1);
+            }
+            .dropdown img{
+                filter: invert(0);
+            }
+            .dropdown-content a {
+                color: #fff
+            }
+        }
+        .contact-wrapper {
+            box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+        }
+        .about__card {
+            background: rgba(255,255,255,0.7);
+        }
+        .logo {
+            filter: invert(1);
+        }
+        #lightning {
+            stroke: black
+        } 
+        .dropdown-content {
+            filter: invert(1);
+        }
+        .btn {
+            border-color: black;
+        }
+        .dropbtn img {
+            filter: invert(1);
+        }
+        .menu__list-item::after {
+            background-color: black;
+        }
+        .works-slide__row-param img {
+            filter: invert(1);
+        }
+        .main__settings-icon::before {
+            filter: invert(1);
+        }
+        .main__settings-colors {
+            background-color: black;
+            .main__colors-dark {
+                border: 2px solid #fff;
+            }
+        }
+
+    }
+    &.default {
+        background: $grad-blue;
+    }
 }
 .logo,
 .logotype {

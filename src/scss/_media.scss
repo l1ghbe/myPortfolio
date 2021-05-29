@@ -405,18 +405,37 @@
     .skills::after {
         bottom: 180px;
     }
+    // .skills__row-text {
+    //     // position: absolute;
+    //     position: relative;
+    //     // bottom: 0px;
+    //     // left: 40%;
+    //     bottom: 125px;
+    //     left: 28%;
+    //     transform: translateX(-45%);
+    //     margin-top: 75%;
+    // }
     .skills__row-text {
-        position: absolute;
-        bottom: 0px;
-        left: 40%;
-        transform: translateX(-40%);
+        position: relative;
+        bottom: 185px;
+        left: 5%;
+        margin-top: 290%;
+        left: -40%;
     }
     .skills {
-        margin-bottom: 200px;
+        // margin-bottom: 200px;
+        margin-bottom: 110px;
     }
     .skills__rows {
         padding-bottom: 95px;
     }
+    .progress {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     
 }
 @media (max-width: 553px) {

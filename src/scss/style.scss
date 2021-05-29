@@ -131,6 +131,74 @@
             z-index: -1;
             // overflow: hidden;
         }
+        &__settings {
+            position: absolute;
+            bottom: 50px;
+            right: 65px;
+            
+        }
+
+		&__settings-icon {
+            font-size: 35px;
+            transition: .2s;
+            cursor: pointer;
+
+            &.active {
+                transform: rotate(60deg);
+            }
+		}
+
+        &__settings-colors {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(25px);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 7px;
+            // top: 0;
+            right: 0;
+            bottom: 45px;
+            position: absolute;
+            background-color: #fff;
+            width: 200px;
+            height: 50px;
+            transition: .3s;
+            &::after {
+                content: '';
+                border: 10px solid transparent;
+                border-top: 10px solid $white;
+                position: absolute;
+                bottom: -19px;
+                right: 4px;
+            }
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+            }
+        }
+        &__colors-default,
+        &__colors-dark,
+        &__colors-light {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+
+        &__colors-default {
+            background-color: rgb(85, 0, 197);
+        }
+        &__colors-dark {
+            background: linear-gradient(#111 20%, #ce0d0d 100%);
+        }
+        &__colors-light {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid #000;
+        }
 }
 
 .lightning {
@@ -218,6 +286,8 @@
     color:rgba(0, 0, 0, 0.5);
     transform: translateX(-50%);
 }
+
+
 
 
 .about {
@@ -411,15 +481,19 @@
 
 		&__row-text {
             margin-top: 40%;
+            position: relative;
 		}
 
 		&__row-text-word {
             font-size: 3rem;
+            position: relative;
+            display: block;
 		}
 		&__row-text-words {
             margin-left: 15px;
             display: inline-block;
             position: relative;
+            cursor: pointer;
             top: -45px;
             & span {
                 animation: 8s linear 0s normal none infinite rotateWord;
@@ -450,8 +524,44 @@
                 &:nth-child(8) {
                     animation-delay: 8s;
                 }
+                // &:nth-child(9) {
+                //     animation-delay: 9s;
+                // }
             }
 		}
+}
+.skills__row-text-full {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: .3s;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 7px;
+    top: 75px;
+    // width: 170px;
+    // bottom: -110px;
+    // height: 150px;
+    padding: 15px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: -35px;
+        border: 15px solid transparent; 
+        border-bottom: 20px solid $white;
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+.skills__text-full {
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000;
+    @extend %roboto;
 }
 
 @keyframes rotateWord {

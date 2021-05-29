@@ -224,6 +224,49 @@ closeSPopup.addEventListener('click', (e) => {
     
 })
 
+const fullWords = document.querySelector('.skills__row-text-full')
+const words = document.querySelector('.skills__row-text-word')
+
+words.addEventListener('click', () => {
+    fullWords.classList.toggle('active')
+})
+
+const settingsBtn = document.querySelector('.main__settings')
+const settingsIcon = document.querySelector('.main__settings-icon')
+const settingsColor = document.querySelector('.main__settings-colors')
+const buttonDefault = document.querySelector('.main__colors-default')
+const buttonDark = document.querySelector('.main__colors-dark')
+const buttonLight = document.querySelector('.main__colors-light')
+
+
+
+settingsIcon.addEventListener('click', () => {
+    settingsIcon.classList.toggle('active')
+    settingsColor.classList.toggle('active')
+})
+
+buttonDefault.addEventListener('click', () => {
+    document.body.classList.add('default')
+    document.body.classList.remove('dark')
+    document.body.classList.remove('light')
+})
+buttonDark.addEventListener('click', () => {
+    document.body.classList.remove('default')
+    document.body.classList.add('dark')
+    document.body.classList.remove('light')
+})
+buttonLight.addEventListener('click', () => {
+    document.body.classList.remove('default')
+    document.body.classList.remove('dark')
+    document.body.classList.add('light')
+})
+
+
+
+
+
+
+
 // ---------------------
 
 ScrollReveal().reveal('.main__row-title', {
