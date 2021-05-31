@@ -100,11 +100,23 @@ const langArray = {
         'en': "Deadline",
         'ru': "Срок"
     },
+    "works-deadline-2": {
+        'en': "Deadline",
+        'ru': "Срок"
+    },
     "works-deadline-a-1": {
         'en': "2 working days",
         'ru': "2 рабочих дня"
     },
+    "works-deadline-a-2": {
+        'en': "4 working days",
+        'ru': "4 рабочих дня"
+    },
     "works-cost-1": {
+        'en': "Cost",
+        'ru': "Стоимость"
+    },
+    "works-cost-2": {
         'en': "Cost",
         'ru': "Стоимость"
     },
@@ -112,9 +124,17 @@ const langArray = {
         'en': "Task",
         'ru': "Задача"
     },
+    "works-task-2": {
+        'en': "Task",
+        'ru': "Задача"
+    },
     "works-description-1": {
         'en': "Create a website that would show the existence of a company that supplies medical equipment",
         'ru': "Создать сайт-визитку, который бы познакомил пользователя с компанией, которая поставляет медицинское оборудование"
+    },
+    "works-description-2": {
+        'en': "To create a concept of a website that could be used as a news portal in the field of cinema.",
+        'ru': "Создать концепт сайта-кинотеатра, который мог бы использоваться как новостной портал в сфере кино."
     },
     "contact-title": {
         'en': "Contact me",
