@@ -462,6 +462,21 @@
 }
 @media (max-width: 553px) {
 
+    .logo img {
+        display: none;
+    }
+
+    .hidden-logo {
+        display: block;
+        transition: .3s;
+    }
+    .header-fixed {
+        .hidden-logo {
+            font-size: 1.8rem;
+            
+        }
+    }
+
     .lightning {
         width: 230px;
         &:hover {
@@ -628,8 +643,21 @@
         height: 120px;
         top: -35px;
     }
+    .main::before {
+        width: 202px;
+        height: 202px;
+    }
 }
 @media (max-width: 380px ) {
+
+    .main::after {
+        width: 109px;
+        height: 109px;
+    }
+    .main::before {
+        width: 170px;
+        height: 170px;
+    }
 
     .popup-wrong__body,
     .popup-success__body {
