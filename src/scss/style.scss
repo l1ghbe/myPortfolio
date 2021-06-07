@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     padding: 45px 64px;
-    z-index: 99;
+    z-index: 100;
     @extend %cooper;
     transition: .4s;
     &__row {
@@ -363,14 +363,16 @@
 		&__text-question {
             font-size: 1.5rem;
             margin-bottom: 17px;
+            // font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
 		}
 
 		&__text-answer {
             margin-bottom: 17px;
             padding-left: 23px;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: $white;
-            font-family: sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-weight: normal;
             // @extend %cooper;
 		}

@@ -271,6 +271,17 @@ buttonLight.addEventListener('click', () => {
     localStorage.setItem('theme', 'light')
 })
 
+const loader = document.querySelector('.loader')
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            loader.classList.add('hidden')
+
+        }, 4000)
+        setTimeout(() => {
+            loader.remove()
+        }, 8000)
+    })
+
 
 
 
