@@ -14,6 +14,14 @@
 //     }
 // }
 
+@media (min-width: 2200px) {
+    .main,
+    .skills,
+    .works {
+        overflow: visible;
+    }
+}
+
 @media (min-width: 1857px) {
     .circle-3 {
         left: 490px;
@@ -21,6 +29,8 @@
     .circle-4 {
         right: 490px;
     }
+    
+
 }
 
 @media (max-width: 1550px) {
