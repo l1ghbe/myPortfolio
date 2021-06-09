@@ -94,6 +94,8 @@
     }
 }
 
+
+
 body {
     background: $grad-blue;
     &.dark {
@@ -295,6 +297,21 @@ body {
                 background-color: $circleslight;
             }
         }
+
+        .skills__row-text {
+            &::after {
+                background-color: #000;
+                z-index: -1;
+            }
+            &:hover {
+                .skills__row-text-word,
+                .skills__row-text-word span {
+                    color: #fff;
+                }
+            }
+
+        }
+
         .works {
             &::after {
                 background-color: $circleslight;

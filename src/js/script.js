@@ -175,32 +175,29 @@ const about = document.getElementById('about')
 const skills = document.getElementById('skills')
 const works = document.getElementById('works')
 const contact = document.getElementById('contact')
-const bubble = document.querySelector('.bubble')
 
 
 const sections = [home, about, skills, works, contact]
 
 const options = {
-    threshold: 0.7
+    threshold: 0.85
 }
 
 function navCheck(entries) {
-    entries.forEach(entry => {        
+    entries.forEach(entry => {     
         const id = entry.target.id        
         const activeAnchor = document.querySelector(`[data-page=${id}]`)
-        const gradientIndex = entry.target.getAttribute('data-index')
-        const coords = activeAnchor.getBoundingClientRect()
-        const directions = {
-            height: coords.height,
-            width: coords.width,
-            top: coords.top,
-            left: coords.left
-        } 
+        // const coords = activeAnchor.getBoundingClientRect()
+        // const directions = {
+        //     height: coords.height,
+        //     width: coords.width,
+        //     top: coords.top,
+        //     left: coords.left
+        // } 
         if (entry.isIntersecting) {
-            bubble.style.setProperty('left', `${directions.left}px`)
-            bubble.style.setProperty('top', `${directions.top}px`)
-            bubble.style.setProperty('width', `${directions.width}px`)
-            bubble.style.setProperty('height', `${directions.height}px`)
+            activeAnchor.parentNode.classList.add('active-section')
+        } else {
+            activeAnchor.parentNode.classList.remove('active-section')
         }
     })
 }
@@ -272,16 +269,16 @@ buttonLight.addEventListener('click', () => {
 })
 
 const loader = document.querySelector('.loader')
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            loader.classList.add('hidden')
 
-        }, 4000)
-        setTimeout(() => {
-            loader.remove()
-        }, 8000)
-    })
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        loader.classList.add('hidden')
 
+    }, 400)
+    setTimeout(() => {
+        loader.remove()
+    }, 8000)
+})
 
 
 
@@ -307,7 +304,7 @@ ScrollReveal().reveal('.main__row-description', {
     distance: '100px'
 })
 ScrollReveal().reveal('.title__text', { 
-    reset: true,
+    // reset: true,
     origin: 'bottom',
     duration: 1000,
     delay: 500,
