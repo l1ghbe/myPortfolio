@@ -176,6 +176,9 @@ body {
         }
     }
     &.light {
+        .works__img-text {
+            color: #fff
+        }
         .hidden-logo {
             filter: invert(1);
             // color: black;
@@ -322,7 +325,16 @@ body {
             .circle-4 {
                 background-color: $circleslight;
             }
+            .form__input,
+            .form__textarea {
+                color: #111;
+            }
+            .validate-circle {
+                color: green;
+            }
         }
+
+
         .swiper-button-prev,
         .swiper-button-next {
             color: #111;

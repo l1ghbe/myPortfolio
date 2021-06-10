@@ -24,8 +24,8 @@ const langArray = {
         'ru': 'Привет, я - Иван <br /> джуниор веб-разработчик'
     },
     "main-description": {
-        'en': "Making websites and stuff for everyone",
-        'ru': "Разрабатываю сайты для каждого"
+        'en': "Making websites for your needs",
+        'ru': "Разрабатываю сайты для ваших нужд"
     },
     
     "contact-btn": {
@@ -42,19 +42,19 @@ const langArray = {
     },
     "about-title": {
         'en': "My name is Ivan and I am a web developer.",
-        'ru': "Меня зовут Иван и я являюсь веб-разработчиком."
+        'ru': "Меня зовут Иван и я - веб-разработчик."
     },
     "about-question-who": {
         'en': "Who am I?",
         'ru': "Кто я такой?"
     },
     "about-answer-who-1": {
-        'en': "- Well-organized and responsible person, who loves what he is doing.",
-        'ru': "- Организованный и ответственный человек, которому нравится его работа."
+        'en': "- Well-organized and responsible person from Eastern Europe who loves his job - creating websites.",
+        'ru': "- Организованный и ответственный человек из Восточной Европы, который любит создавать сайты."
     },
     "about-answer-who-2": {
-        'en': "- Really cares about his work quality, so be sure of the quality of the work provided",
-        'ru': "- Действительно забочусь о качестве проделанной мною работы, поэтому будьте уверены, я не подведу."
+        'en': "- Do my best to improve the quality of work for your future needs 😉",
+        'ru': "- Делаю все возможное для увеличения качества проделанной работы для Ваших будущих потребностей 😉."
     },
     "about-question-what": {
         'en': "What can I provide?",
@@ -104,6 +104,10 @@ const langArray = {
         'en': "Deadline",
         'ru': "Срок"
     },
+    "works-deadline-3": {
+        'en': "Deadline",
+        'ru': "Срок"
+    },
     "works-deadline-a-1": {
         'en': "2 working days",
         'ru': "2 рабочих дня"
@@ -112,11 +116,19 @@ const langArray = {
         'en': "4 working days",
         'ru': "4 рабочих дня"
     },
+    "works-deadline-a-3": {
+        'en': "1 working day",
+        'ru': "1 рабочий день"
+    },
     "works-cost-1": {
         'en': "Cost",
         'ru': "Стоимость"
     },
     "works-cost-2": {
+        'en': "Cost",
+        'ru': "Стоимость"
+    },
+    "works-cost-3": {
         'en': "Cost",
         'ru': "Стоимость"
     },
@@ -128,6 +140,10 @@ const langArray = {
         'en': "Task",
         'ru': "Задача"
     },
+    "works-task-3": {
+        'en': "Task",
+        'ru': "Задача"
+    },
     "works-description-1": {
         'en': "Create a website that would show the existence of a company that supplies medical equipment",
         'ru': "Создать сайт-визитку, который бы познакомил пользователя с компанией, которая поставляет медицинское оборудование"
@@ -135,6 +151,10 @@ const langArray = {
     "works-description-2": {
         'en': "To create a concept of a website that could be used as a news portal in the field of cinema.",
         'ru': "Создать концепт сайта-кинотеатра, который мог бы использоваться как новостной портал в сфере кино."
+    },
+    "works-description-3": {
+        'en': "To create a concept of a fully responsive website, using features from react, such as react hooks, react router, etc.",
+        'ru': "Создать концепт полностью адаптивного сайта, используя при этом возможности библиотеки Реакт - хуки, роутеры и так далее."
     },
     "contact-title": {
         'en': "Contact me",

@@ -274,7 +274,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         loader.classList.add('hidden')
 
-    }, 4000)
+    }, 400)
     setTimeout(() => {
         loader.remove()
     }, 8000)

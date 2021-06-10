@@ -57,7 +57,7 @@
                 <div class="main__row">
                     <div class="main__row-text">
                         <h2 class="main__row-title lg-main-title">Hi, I'm Ivan <br /> junior web developer</h2>
-                        <p class="main__row-description lg-main-description">Making websites and stuff for everyone</p>
+                        <p class="main__row-description lg-main-description">Making websites for your needs</p>
                         <a href="#works" class="btn btn-main lg-contact-btn">See my works</a>
                     </div>
                     <div class="main__row-img">
@@ -90,7 +90,7 @@
                         <h2 class="card__content-title lg-about-title">My name is Ivan and I am a web developer.</h2>
                         <div class="about__card-text">
                             <h3 class="card__text-question lg-about-question-who">Who am I?</h3>
-                            <p class="card__text-answer lg-about-answer-who-1">- Well-organized and responsible person from eastern europe who loves his job - creating websites.</p>
+                            <p class="card__text-answer lg-about-answer-who-1">- Well-organized and responsible person from Eastern Europe who loves his job - creating websites.</p>
                             <!-- <p class="card__text-answer lg-about-answer-who-2">- Really cares about his work quality, so be sure of the quality of the work provided </p> -->
                             <p class="card__text-answer lg-about-answer-who-2">- Do my best to improve the quality of work for your future needs 😉 </p>
                         </div>
@@ -269,8 +269,8 @@
                                     </div>
                                 </div>
                                 <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-2">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-2">To create a concept of a fully responsive website, using features from react, such as react hooks, react router, etc.</p>
+                                    <h4 class="works-slide__row-text-task-title lg-works-task-3">Task</h4>
+                                    <p class="works-slide__row-text-task-description lg-works-description-3">To create a concept of a fully responsive website, using features from react, such as react hooks, react router, etc.</p>
                                 </div>
                                 
                             </div>
@@ -291,15 +291,18 @@
                 <h1 class="title__text contact-title lg-contact-title">Contact me</h1>
                 <form method="POST" action="/" data-netlify="true" id="form" name="form" class="form__body">
                     <div class="contact-name">
-                        <input type="text" id="formName" name="name" autocomplete="off" autocapitalize="on" class="form__input" placeholder=" ">
+                        <input type="text" id="formName" name="name" autocomplete="off" title="Enter your name" required autocapitalize="on" class="form__input" placeholder=" ">
                         <label for="formName" class="form__label lg-contact-name">Name</label>
                     </div>
                     <div class="contact-email">
-                        <input type="text" id="formEmail" name="email" autocomplete="off" class="form__input" placeholder=" ">
+                        <span class="validate-circle">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                        <input type="text" id="formEmail" name="email" autocomplete="off" title="Enter your email" class="form__input" placeholder=" ">
                         <label for="formEmail" class="form__label">Email</label>
                     </div>
                     <div class="contact-comment">
-                        <textarea name="message" id="formMessage" class="form__textarea" placeholder=" "></textarea>
+                        <textarea name="message" id="formMessage" title="Leave a comment" class="form__textarea" placeholder=" "></textarea>
                         <label for="formMessage" class="form__textarea-label lg-contact-comment">Comment</label>
                     </div>
                     <button type="submit" class="lg-submit">Send</button>
