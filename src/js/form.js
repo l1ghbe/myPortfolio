@@ -21,7 +21,6 @@ const handleSubmit = (e) => {
         document.querySelector('.popup-wrong').style.visibility = 'visible';
         document.querySelector('.popup-wrong__body').style.transform = 'translateY(0px)';
     })
-        alert(error))
 }
 
 
