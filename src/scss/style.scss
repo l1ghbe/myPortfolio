@@ -449,6 +449,12 @@
             @extend %cooper;
             margin-top: 33px;
 		}
+        &__img {
+            & img {
+                width: 202px;
+                height: 222px;
+            }
+        }
 }
 
 .progress {
@@ -1074,6 +1080,7 @@
         transition: .3s;
         & img {
             width: 40px;
+            height: 40px;
             transition: .3s;
         }
         &:hover {

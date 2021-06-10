@@ -55,16 +55,10 @@ window.onscroll = () => {
 }
 
 function scrollFunction() {
-    // let scrollPos = 100;
-
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         header.classList.add('header-fixed');
-        //     bubble.style.display = 'block'
-
-
     } else {
         header.classList.remove('header-fixed');
-        bubble.style.display = 'none'
     }
 }
 
@@ -133,16 +127,6 @@ links.forEach(link => {
     })
 })
 
-// const inputs = document.querySelectorAll('.form__input')
-
-// inputs.forEach(input => {
-//     if (input.contains.classList('_error')) {
-//         document.querySelector('.form__label').style.color = 'red'
-        
-//     }
-// })
-
-
 
 function smooth(nameClass, nameId) {
     document.querySelector(nameClass).addEventListener('click', (e) => {
@@ -187,13 +171,6 @@ function navCheck(entries) {
     entries.forEach(entry => {     
         const id = entry.target.id        
         const activeAnchor = document.querySelector(`[data-page=${id}]`)
-        // const coords = activeAnchor.getBoundingClientRect()
-        // const directions = {
-        //     height: coords.height,
-        //     width: coords.width,
-        //     top: coords.top,
-        //     left: coords.left
-        // } 
         if (entry.isIntersecting) {
             activeAnchor.parentNode.classList.add('active-section')
         } else {
@@ -274,7 +251,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         loader.classList.add('hidden')
 
-    }, 400)
+    }, 4000)
     setTimeout(() => {
         loader.remove()
     }, 8000)

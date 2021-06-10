@@ -57,7 +57,7 @@
                 <div class="main__row">
                     <div class="main__row-text">
                         <h2 class="main__row-title lg-main-title">Hi, I'm Ivan <br /> junior web developer</h2>
-                        <p class="main__row-description lg-main-description">Making websites and stuff for everyone</p>
+                        <p class="main__row-description lg-main-description">Making websites for your needs</p>
                         <a href="#works" class="btn btn-main lg-contact-btn">See my works</a>
                     </div>
                     <div class="main__row-img">
@@ -90,7 +90,7 @@
                         <h2 class="card__content-title lg-about-title">My name is Ivan and I am a web developer.</h2>
                         <div class="about__card-text">
                             <h3 class="card__text-question lg-about-question-who">Who am I?</h3>
-                            <p class="card__text-answer lg-about-answer-who-1">- Well-organized and responsible person from eastern europe who loves his job - creating websites.</p>
+                            <p class="card__text-answer lg-about-answer-who-1">- Well-organized and responsible person from Eastern Europe who loves his job - creating websites.</p>
                             <!-- <p class="card__text-answer lg-about-answer-who-2">- Really cares about his work quality, so be sure of the quality of the work provided </p> -->
                             <p class="card__text-answer lg-about-answer-who-2">- Do my best to improve the quality of work for your future needs 😉 </p>
                         </div>
@@ -175,14 +175,14 @@
                 <div class="swiper-wrapper">
                     <div class="works-slide swiper-slide">
                         <div class="works-slide__row">
-                            <a href="https://l1ghbe.github.io/complitech/" target="_blank" class="works-slide__row-img">
+                            <a href="https://l1ghbe.github.io/complitech/" target="_blank" rel="noreferrer" class="works-slide__row-img">
                                 <img src='./img/slider/complitech.jpg' alt="">
                                 <div class="works__img-content">
                                     <h4 class="works__img-text">HTML, CSS, Javascript, PHP</h4>
                                 </div>
                             </a>
                             <div class="works-slide__row-text">
-                                <a href="https://l1ghbe.github.io/complitech/" target="_blank" class="works-slide__row-text-title">Complitech</a>
+                                <a href="https://l1ghbe.github.io/complitech/" target="_blank" rel="noreferrer" class="works-slide__row-text-title">Complitech</a>
                                 <div class="works-slide__row-param">
                                     <div class="deadline">
                                         <img src="./img/layer1.svg" alt="Time">
@@ -210,14 +210,14 @@
                     </div>
                     <div class="works-slide swiper-slide">
                         <div class="works-slide__row">
-                            <a href="https://l1ghbe.github.io/mbox/dist/" target="_blank" class="works-slide__row-img">
+                            <a href="https://l1ghbe.github.io/mbox/dist/" target="_blank" rel="noreferrer" class="works-slide__row-img">
                                 <img src='./img/slider/mb.jpg' alt="">
                                 <div class="works__img-content">
                                     <h4 class="works__img-text">HTML, SCSS, Javascript, Gulp</h4>
                                 </div>
                             </a>
                             <div class="works-slide__row-text">
-                                <a href="https://l1ghbe.github.io/mbox/dist/" target="_blank" class="works-slide__row-text-title">Concept: MBOX Cinema</a>
+                                <a href="https://l1ghbe.github.io/mbox/dist/" rel="noreferrer" target="_blank" class="works-slide__row-text-title">Concept: MBOX Cinema</a>
                                 <div class="works-slide__row-param">
                                     <div class="deadline">
                                         <img src="./img/layer1.svg" alt="Time">
@@ -244,14 +244,14 @@
                     </div>
                     <div class="works-slide swiper-slide">
                         <div class="works-slide__row">
-                            <a href="https://web-info.netlify.app/" target="_blank" class="works-slide__row-img">
+                            <a href="https://web-info.netlify.app/" target="_blank" rel="noreferrer" class="works-slide__row-img">
                                 <img src='./img/slider/web.jpg' alt="">
                                 <div class="works__img-content">
                                     <h4 class="works__img-text">React Js, Scss</h4>
                                 </div>
                             </a>
                             <div class="works-slide__row-text">
-                                <a href="https://web-info.netlify.app/" target="_blank" class="works-slide__row-text-title">Concept: Web Info</a>
+                                <a href="https://web-info.netlify.app/" target="_blank" rel="noreferrer" class="works-slide__row-text-title">Concept: Web Info</a>
                                 <div class="works-slide__row-param">
                                     <div class="deadline">
                                         <img src="./img/layer1.svg" alt="Time">
@@ -269,8 +269,8 @@
                                     </div>
                                 </div>
                                 <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-2">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-2">To create a concept of a fully responsive website, using features from react, such as react hooks, react router, etc.</p>
+                                    <h4 class="works-slide__row-text-task-title lg-works-task-3">Task</h4>
+                                    <p class="works-slide__row-text-task-description lg-works-description-3">To create a concept of a fully responsive website, using features from react, such as react hooks, react router, etc.</p>
                                 </div>
                                 
                             </div>
@@ -289,17 +289,20 @@
             <div class="circle-4"></div>
             <div class="contact-wrapper">
                 <h1 class="title__text contact-title lg-contact-title">Contact me</h1>
-                <form action="#" id="form" class="form__body">
+                <form method="POST" action="/" data-netlify="true" id="form" name="form" class="form__body">
                     <div class="contact-name">
-                        <input type="text" id="formName" name="name" autocomplete="off" autocapitalize="on" class="form__input _req" placeholder=" ">
+                        <input type="text" id="formName" name="name" autocomplete="off" title="Enter your name" required autocapitalize="on" class="form__input" placeholder=" ">
                         <label for="formName" class="form__label lg-contact-name">Name</label>
                     </div>
                     <div class="contact-email">
-                        <input type="text" id="formEmail" name="email" autocomplete="off" class="form__input _req _email" placeholder=" ">
+                        <span class="validate-circle">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                        <input type="text" id="formEmail" name="email" autocomplete="off" title="Enter your email" class="form__input" placeholder=" ">
                         <label for="formEmail" class="form__label">Email</label>
                     </div>
                     <div class="contact-comment">
-                        <textarea name="message" id="formMessage" class="form__textarea" placeholder=" "></textarea>
+                        <textarea name="message" id="formMessage" title="Leave a comment" class="form__textarea" placeholder=" "></textarea>
                         <label for="formMessage" class="form__textarea-label lg-contact-comment">Comment</label>
                     </div>
                     <button type="submit" class="lg-submit">Send</button>
@@ -340,7 +343,7 @@
                 <div class="footer__rows">
                     <h2 class="footer-text lg-copyright">&copy; 2021 All rights reserved</h2>
                     <div class="footer-contacts">
-                        <a href="mailto:ee1zet25@gmail.com" class="footer-contacts__mail">ee1zet25@gmail.com</a>
+                        <a href="mailto:ee1zet25@gmail.com" class="footer-contacts__mail">lighbewd@gmail.com</a>
                         <ul class="footer-contacts__list">
                             <li class="footer-contacts__item">
                                 <a href="https://vk.com/thunderino" target="_blank" rel="noreferrer" class="footer-contacts__link">
@@ -376,10 +379,10 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <!-- <script type="text/javascript" src="js/vanilla-tilt.min.js"></script> -->
     <script src="js/script.min.js"></script>
-    <script src="js/translate.js"></script>
-    <script src="js/form.js"></script>
+    <!-- <script src="js/translate.js"></script>
+    <script src="js/form.js"></script> -->
 
 
 </body>
