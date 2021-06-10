@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lighbe - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> -->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/fav/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="manifest" href="./img/fav/site.webmanifest">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://use.typekit.net/rnh2ozz.css">
@@ -14,10 +17,17 @@
 </head>
 <body>
     <div class="page-wrapper">
+        <div class="loader">
+            <svg class="loader-img" xmlns="http://www.w3.org/2000/svg" width="351.871" height="417.265" viewBox="0 0 351.871 417.265">
+                <path id="loader-img-lightning" d="M888.981,1432.8,723.536,1586.007l141.484-26.089L703.467,1680.329l149.511-29.1L681.13,1820.269l308.314-234.262-100.464,16.311,100.464-96.943-118.4,15.409,118.4-87.984Z" transform="translate(-549.098 -1472.114) rotate(4)" fill="none" stroke="#fff" stroke-width="9"/>
+            </svg>
+            <h4 class="loader-text">Lighbe</h4>
+        </div>
         <header class="header">
             <div class="header__row">
                 <a href="#home" class="logo">
                     <img src="./img/logo.svg" class="logotype" alt="Logo">
+                    <h2 class="hidden-logo">Lighbe</h2>
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
@@ -26,7 +36,6 @@
                         <li class="menu__list-item"><a href="#skills" data-page="skills" class="lg-skills menu__list-link">Skills</a></li>
                         <li class="menu__list-item"><a href="#works" data-page="works" class="lg-works menu__list-link">Works</a></li>
                         <li class="menu__list-item"><a href="#contact" data-page="contact" class="lg-contact menu__list-link">Contact</a></li>
-                        <div class="bubble"></div>
                     </ul>
                 </nav>
                 <div class="dropdown">
@@ -57,10 +66,17 @@
                         </svg>
                     </div>
                 </div>
-                
             </div>
             <div class="arrow-down">
-                <img src="./img/arrowdown.svg" alt="">
+                <img src="./img/arrowdown.svg" alt="Down Arrow">
+            </div>
+            <div class="main__settings">
+                <i class="fas fa-cog main__settings-icon" title="Change theme"></i>
+                <div class="main__settings-colors">
+                    <div class="main__colors-dark" title="dark"></div>
+                    <div class="main__colors-light" title="light"></div>
+                    <div class="main__colors-default" title="default"></div>
+                </div>
             </div>
         </main>
         <section class="about" id="about">
@@ -74,13 +90,13 @@
                         <h2 class="card__content-title lg-about-title">My name is Ivan and I am a web developer.</h2>
                         <div class="about__card-text">
                             <h3 class="card__text-question lg-about-question-who">Who am I?</h3>
-                            <p class="card__text-answer lg-about-answer-who-1">- Well-organized and responsible person, who loves what he is doing.</p>
-                            <p class="card__text-answer lg-about-answer-who-2">- Really cares about his work quality, so be sure of the quality of the work provided </p>
+                            <p class="card__text-answer lg-about-answer-who-1">- Well-organized and responsible person from eastern europe who loves his job - creating websites.</p>
+                            <!-- <p class="card__text-answer lg-about-answer-who-2">- Really cares about his work quality, so be sure of the quality of the work provided </p> -->
+                            <p class="card__text-answer lg-about-answer-who-2">- Do my best to improve the quality of work for your future needs 😉 </p>
                         </div>
                         <div class="about__card-text">
                             <h3 class="card__text-question lg-about-question-what">What can I provide?</h3>
-                            <p class="card__text-answer lg-about-answer-what-1">- I can help develop your business / any other idea by creating a website
-    with the existing design or completely from scratch</p>
+                            <p class="card__text-answer lg-about-answer-what-1">- I can help develop your business / any other idea by creating a website with the existing design or completely from scratch</p>
                             <p class="card__text-answer lg-about-answer-what-2">- Provide work just in time (otherwise you will receive a generous discount for the work I have done)  </p>
                         </div>
                     </div>
@@ -135,12 +151,15 @@
                                 <div class="skills__row-text-words">
                                     <span>Flexbox</span>
                                     <span>Grid</span>
-                                    <span>Tailwind</span>
                                     <span>Gulp</span>
                                     <span>Sass</span>
                                     <span>Scss</span>
                                     <span>ReactJs</span>
+                                    <span>Redux</span>
                                     <span>TypeScript</span>
+                                </div>
+                                <div class="skills__row-text-full">
+                                    <p class="skills__text-full">Git, Flexbox, Grid, Bootstrap/Material UI/Tailwind, Gulp, Sass, Scss, ReactJs, Redux, TypeScript </p>
                                 </div>
                             </h2>
                         </div>
@@ -156,11 +175,14 @@
                 <div class="swiper-wrapper">
                     <div class="works-slide swiper-slide">
                         <div class="works-slide__row">
-                            <a href="#" class="works-slide__row-img">
+                            <a href="https://l1ghbe.github.io/complitech/" target="_blank" class="works-slide__row-img">
                                 <img src='./img/slider/complitech.jpg' alt="">
+                                <div class="works__img-content">
+                                    <h4 class="works__img-text">HTML, CSS, Javascript, PHP</h4>
+                                </div>
                             </a>
                             <div class="works-slide__row-text">
-                                <a href="#" class="works-slide__row-text-title">Complitech</a>
+                                <a href="https://l1ghbe.github.io/complitech/" target="_blank" class="works-slide__row-text-title">Complitech</a>
                                 <div class="works-slide__row-param">
                                     <div class="deadline">
                                         <img src="./img/layer1.svg" alt="Time">
@@ -188,37 +210,73 @@
                     </div>
                     <div class="works-slide swiper-slide">
                         <div class="works-slide__row">
-                            <a href="#" class="works-slide__row-img">
-                                <img src='./img/slider/complitech.jpg' alt="">
+                            <a href="https://l1ghbe.github.io/mbox/dist/" target="_blank" class="works-slide__row-img">
+                                <img src='./img/slider/mb.jpg' alt="">
+                                <div class="works__img-content">
+                                    <h4 class="works__img-text">HTML, SCSS, Javascript, Gulp</h4>
+                                </div>
                             </a>
                             <div class="works-slide__row-text">
-                                <a href="#" class="works-slide__row-text-title">Not Complitech</a>
+                                <a href="https://l1ghbe.github.io/mbox/dist/" target="_blank" class="works-slide__row-text-title">Concept: MBOX Cinema</a>
                                 <div class="works-slide__row-param">
                                     <div class="deadline">
                                         <img src="./img/layer1.svg" alt="Time">
                                         <div class="works-slide__row-text-deadline">
-                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-1">Deadline</h4>
-                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-1">2 working days</p>
+                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-2">Deadline</h4>
+                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-2">4 working days</p>
                                         </div>
                                     </div>
                                     <div class="cost">
                                         <img src="./img/money.svg" alt="Money">
                                         <div class="works-slide__row-text-cost">
-                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-1">Cost</h4>
-                                            <p class="works-slide__row-text-cost-description">90$</p>
+                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-2">Cost</h4>
+                                            <p class="works-slide__row-text-cost-description">110$</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-1">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-1">Create a website that would show the existence of a company that supplies medical equipment</p>
+                                    <h4 class="works-slide__row-text-task-title lg-works-task-2">Task</h4>
+                                    <p class="works-slide__row-text-task-description lg-works-description-2">To create a concept of a website that could be used as a news portal in the field of cinema.</p>
                                 </div>
-                                
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="works-slide swiper-slide">kek</div>
+                    <div class="works-slide swiper-slide">
+                        <div class="works-slide__row">
+                            <a href="https://web-info.netlify.app/" target="_blank" class="works-slide__row-img">
+                                <img src='./img/slider/web.jpg' alt="">
+                                <div class="works__img-content">
+                                    <h4 class="works__img-text">React Js, Scss</h4>
+                                </div>
+                            </a>
+                            <div class="works-slide__row-text">
+                                <a href="https://web-info.netlify.app/" target="_blank" class="works-slide__row-text-title">Concept: Web Info</a>
+                                <div class="works-slide__row-param">
+                                    <div class="deadline">
+                                        <img src="./img/layer1.svg" alt="Time">
+                                        <div class="works-slide__row-text-deadline">
+                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-3">Deadline</h4>
+                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-3">1 working day</p>
+                                        </div>
+                                    </div>
+                                    <div class="cost">
+                                        <img src="./img/money.svg" alt="Money">
+                                        <div class="works-slide__row-text-cost">
+                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-3">Cost</h4>
+                                            <p class="works-slide__row-text-cost-description">115$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="works-slide__row-text-task">
+                                    <h4 class="works-slide__row-text-task-title lg-works-task-2">Task</h4>
+                                    <p class="works-slide__row-text-task-description lg-works-description-2">To create a concept of a fully responsive website, using features from react, such as react hooks, react router, etc.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -251,7 +309,7 @@
         <div class="popup-success">
             <div class="popup-success__body">
                 <a href="#" class="popup-success__btn">
-                    <i class="fas fa-times btn-close"></i>
+                    <i class="fas fa-times btn-close" ></i>
                 </a>
                 <div class="popup-success__text">
                     <div class="success-animation">
@@ -264,7 +322,9 @@
         </div>
         <div class="popup-wrong">
             <div class="popup-wrong__body">
-                <a href="#" class="popup-wrong__btn">X</a>
+                <a href="#" class="popup-wrong__btn">
+                    <i class="fas fa-times btn-close" ></i>
+                </a>
                 <div class="popup-wrong__text">
                     <div class="error-image">
                         <img src="./img/error-sign.png" class="error-sign" alt="">
@@ -283,28 +343,28 @@
                         <a href="mailto:ee1zet25@gmail.com" class="footer-contacts__mail">ee1zet25@gmail.com</a>
                         <ul class="footer-contacts__list">
                             <li class="footer-contacts__item">
-                                <a href="https://vk.com/thunderino" target="_blank" class="footer-contacts__link">
-                                    <img src="./img/VK.svg" alt="">
+                                <a href="https://vk.com/thunderino" target="_blank" rel="noreferrer" class="footer-contacts__link">
+                                    <img src="./img/VK.svg" alt="VK">
                                 </a>
                             </li>
                             <li class="footer-contacts__item">
-                                <a href="https://www.facebook.com/ivan.talkachov.1/" target="_blank" class="footer-contacts__link">
-                                    <img src="./img/Facebook.svg" alt="">
+                                <a href="https://www.facebook.com/ivan.talkachov.1/" rel="noreferrer" target="_blank" class="footer-contacts__link">
+                                    <img src="./img/Facebook.svg" alt="FB">
                                 </a>
                             </li>
                             <li class="footer-contacts__item">
-                                <a href="#" class="footer-contacts__link" target="_blank">
-                                    <img src="./img/Linkedin.svg" alt="">
+                                <a href="#" rel="noreferrer" class="footer-contacts__link" target="_blank">
+                                    <img src="./img/Linkedin.svg" alt="LinkedIn">
                                 </a>
                             </li>
                             <li class="footer-contacts__item">
-                                <a href="https://www.instagram.com/thundersreturn/" target="_blank" class="footer-contacts__link">
-                                    <img src="./img/Instagram.svg" alt="">
+                                <a href="https://www.instagram.com/thundersreturn/" rel="noreferrer"rel="noreferrer" target="_blank" class="footer-contacts__link">
+                                    <img src="./img/Instagram.svg" alt="Inst">
                                 </a>
                             </li>
                             <li class="footer-contacts__item">
-                                <a href="https://telegram.me/thunderzzz" target="_blank" class="footer-contacts__link">
-                                    <img src="./img/Telegram.svg" alt="">
+                                <a href="https://telegram.me/thunderzzz" rel="noreferrer" target="_blank" class="footer-contacts__link">
+                                    <img src="./img/Telegram.svg" alt="Telegram">
                                 </a>
                             </li>
                         </ul>
@@ -316,7 +376,7 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script src="js/script.min.js"></script>
     <script src="js/translate.js"></script>
     <script src="js/form.js"></script>
