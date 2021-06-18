@@ -100,7 +100,7 @@ cardPython.addEventListener('click', () => {
     selectProgress('Python', 'Basics', '100%', 'purple');
 }) 
 
-
+//Language
 
 function chooseLanguage(lang, btnLang = 'ENG', langHash = 'en') {
     lang.addEventListener('click', (e) => {
@@ -118,7 +118,7 @@ function chooseLanguage(lang, btnLang = 'ENG', langHash = 'en') {
 chooseLanguage(en, 'ENG', 'en')
 chooseLanguage(ru, 'RU', 'ru')
 
-
+//nav
 
 links.forEach(link => {
     link.addEventListener('click', () => {
@@ -132,6 +132,8 @@ links.forEach(link => {
     })
 })
 
+
+//smooth transition
 
 function smooth(nameClass, nameId) {
     document.querySelector(nameClass).addEventListener('click', (e) => {
@@ -151,6 +153,8 @@ smooth('.lg-works', 'works')
 smooth('.lg-contact-btn', 'works')
 smooth('.lg-contact-btn-2', 'contact')
 
+//burger
+
 burger.addEventListener('click', (e) => {
     e.preventDefault()
     burger.classList.toggle('active')
@@ -158,6 +162,7 @@ burger.addEventListener('click', (e) => {
     dropDown.classList.toggle('active')
 })
 
+//active nav link
 
 const sections = [home, about, skills, works, contact]
 
@@ -221,20 +226,19 @@ buttonLight.addEventListener('click', () => {
     localStorage.setItem('theme', 'light')
 })
 
+//loader
+
 const loader = document.querySelector('.loader')
 
 window.addEventListener('load', () => {
     setTimeout(() => {
         loader.classList.add('hidden')
 
-    }, 400)
+    }, 4000)
     setTimeout(() => {
         loader.remove()
     }, 8000)
 })
-
-
-
 
 
 function removeNotificationActive(element) {
@@ -250,6 +254,8 @@ function btnListener(btnElement, popupElement) {
 
 btnListener(closeWPopup, popupWrong)
 btnListener(closeSPopup, popupSuccess)
+
+//Close clicking bg
 
 function backgroundClose(popupEl, popupClass) {
     popupEl.addEventListener('click', e => {
