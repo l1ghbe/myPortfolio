@@ -6,6 +6,32 @@ const cardPython = document.getElementById('card-python');
 const progressName = document.querySelector('.progress-name');
 const progressValue = document.querySelector('.progress-value');
 const progressBarValue = document.querySelector('.progress-bar__value');
+const dropDown = document.querySelector('.dropdown')
+const en = document.querySelector('.dropdown-content-eng');
+const ru = document.querySelector('.dropdown-content-rus');
+const btnSpan = document.querySelector('.dropbtn-span');
+const burger = document.querySelector('.header__burger-btn')
+const menu = document.querySelector('.menu')
+const links = document.querySelectorAll('.menu__list-link')
+const home = document.getElementById('home')
+const about = document.getElementById('about')
+const skills = document.getElementById('skills')
+const works = document.getElementById('works')
+const contact = document.getElementById('contact')
+const fullWords = document.querySelector('.skills__row-text-full')
+const words = document.querySelector('.skills__row-text-word')
+const settingsBtn = document.querySelector('.main__settings')
+const settingsIcon = document.querySelector('.main__settings-icon')
+const settingsColor = document.querySelector('.main__settings-colors')
+const buttonDefault = document.querySelector('.main__colors-default')
+const buttonDark = document.querySelector('.main__colors-dark')
+const buttonLight = document.querySelector('.main__colors-light')
+const theme = localStorage.getItem('theme')
+const closeWPopup = document.querySelector('.popup-wrong__btn')
+const closeSPopup = document.querySelector('.popup-success__btn')
+const popupWrong = document.querySelector('.popup-wrong')
+const popupSuccess = document.querySelector('.popup-success')
+const popupSuccessBody = document.querySelector('.popup-success__body')
 const allLang = ['en', 'ru']
 
 VanillaTilt.init(document.querySelector(".about__card"), {
@@ -19,21 +45,15 @@ VanillaTilt.init(document.querySelectorAll(".grid-card__img"), {
     max: 25,
     speed: 1000,
     reverse: true,
-    // glare: true,
-    // "max-glare": 1,
 });
 
 const worksSwiper = new Swiper('.works-slider', {
-    // loop: true,
-
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true,
     },
     allowTouchMove: false,
-    
     breakpoints: {
         100: {
             allowTouchMove: true,
@@ -42,8 +62,6 @@ const worksSwiper = new Swiper('.works-slider', {
             allowTouchMove: false
         }
     },
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -55,15 +73,12 @@ window.onscroll = () => {
 }
 
 function scrollFunction() {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.classList.add('header-fixed');
     } else {
         header.classList.remove('header-fixed');
     }
 }
-
-
-
 
 function selectProgress(inner, innerValue, innerWidth, color = '#00EEFF') {
     progressName.innerHTML = inner;
@@ -85,35 +100,25 @@ cardPython.addEventListener('click', () => {
     selectProgress('Python', 'Basics', '100%', 'purple');
 }) 
 
-const dropDown = document.querySelector('.dropdown')
-const en = document.querySelector('.dropdown-content-eng');
-const ru = document.querySelector('.dropdown-content-rus');
-const btnSpan = document.querySelector('.dropbtn-span');
 
-en.addEventListener('click', (e) => {
-    e.preventDefault()
-    if (true) {
-        btnSpan.innerText = 'ENG'
-        location.href = window.location.pathname + '#en'
-    }  
-    for (key in langArray) {
-        document.querySelector('.lg-' + key).innerHTML = langArray[key]['en']
-    }
-})
-ru.addEventListener('click', (e) => {
-    e.preventDefault()
-    if (true) {
-        btnSpan.innerText = 'RU'
-        location.href = window.location.pathname + '#ru'
-    }  
-    for (key in langArray) {
-        document.querySelector('.lg-' + key).innerHTML = langArray[key]['ru']
-    }
-})
 
-const burger = document.querySelector('.header__burger-btn')
-const menu = document.querySelector('.menu')
-const links = document.querySelectorAll('.menu__list-link')
+function chooseLanguage(lang, btnLang = 'ENG', langHash = 'en') {
+    lang.addEventListener('click', (e) => {
+        e.preventDefault()
+        if (true) {
+            btnSpan.innerText = btnLang
+            location.href = window.location.pathname + `#${langHash}`
+        }
+        for (key in langArray) {
+            document.querySelector('.lg-' + key).innerHTML = langArray[key][langHash]
+        }
+    })
+}
+
+chooseLanguage(en, 'ENG', 'en')
+chooseLanguage(ru, 'RU', 'ru')
+
+
 
 links.forEach(link => {
     link.addEventListener('click', () => {
@@ -154,13 +159,6 @@ burger.addEventListener('click', (e) => {
 })
 
 
-const home = document.getElementById('home')
-const about = document.getElementById('about')
-const skills = document.getElementById('skills')
-const works = document.getElementById('works')
-const contact = document.getElementById('contact')
-
-
 const sections = [home, about, skills, works, contact]
 
 const options = {
@@ -185,36 +183,14 @@ sections.forEach(section => {
     observer.observe(section)
 })
 
-const closeWPopup = document.querySelector('.popup-wrong__btn')
-const closeSPopup = document.querySelector('.popup-success__btn')
-const popupWrong = document.querySelector('.popup-wrong')
 
-closeWPopup.addEventListener('click', (e) => {
-    e.preventDefault()
-    document.querySelector('.popup-wrong').style.opacity = '0'
-    document.querySelector('.popup-wrong').style.visibility = 'hidden'
-})
-closeSPopup.addEventListener('click', (e) => {
-    e.preventDefault()
-    document.querySelector('.popup-success').style.opacity = '0'
-    document.querySelector('.popup-success').style.visibility = 'hidden'
-    
-})
 
-const fullWords = document.querySelector('.skills__row-text-full')
-const words = document.querySelector('.skills__row-text-word')
 
 words.addEventListener('click', () => {
     fullWords.classList.toggle('active')
 })
 
-const settingsBtn = document.querySelector('.main__settings')
-const settingsIcon = document.querySelector('.main__settings-icon')
-const settingsColor = document.querySelector('.main__settings-colors')
-const buttonDefault = document.querySelector('.main__colors-default')
-const buttonDark = document.querySelector('.main__colors-dark')
-const buttonLight = document.querySelector('.main__colors-light')
-const theme = localStorage.getItem('theme')
+
 
 if (theme) {
     document.body.classList.add(theme)
@@ -251,11 +227,41 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         loader.classList.add('hidden')
 
-    }, 4000)
+    }, 400)
     setTimeout(() => {
         loader.remove()
     }, 8000)
 })
+
+
+
+
+
+function removeNotificationActive(element) {
+    element.classList.remove('notification-active')
+}
+
+function btnListener(btnElement, popupElement) {
+    btnElement.addEventListener('click', (e) => {
+        e.preventDefault()
+        popupElement.classList.remove('notification-active')
+    })
+}
+
+btnListener(closeWPopup, popupWrong)
+btnListener(closeSPopup, popupSuccess)
+
+function backgroundClose(popupEl, popupClass) {
+    popupEl.addEventListener('click', e => {
+        if (e.target.classList.contains(popupClass)) {
+            removeNotificationActive(popupEl)
+        }
+    })
+}
+
+backgroundClose(popupSuccess, 'popup-success')
+backgroundClose(popupWrong, 'popup-wrong')
+
 
 
 

@@ -12,18 +12,13 @@ const handleSubmit = (e) => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
         }).then(() => {
-            
-            document.querySelector('.popup-success').style.opacity = '1';
-            document.querySelector('.popup-success').style.visibility = 'visible';
-            document.querySelector('.popup-success__body').style.transform = 'translateY(0px)';
+            document.querySelector('.popup-success').classList.add('notification-active');
             form.reset();
             emailInput.parentElement.classList.remove('validated')
             emailInput.style.removeProperty('border-color', 'green')
         }).catch((e) => {
             console.log(e);
-            document.querySelector('.popup-wrong').style.opacity = '1';
-            document.querySelector('.popup-wrong').style.visibility = 'visible';
-            document.querySelector('.popup-wrong__body').style.transform = 'translateY(0px)';
+            document.querySelector('.popup-wrong').classList.add('notification-active');
         })
     } else {
         alert('Please, enter the correct email')
