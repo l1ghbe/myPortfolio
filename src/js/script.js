@@ -231,14 +231,18 @@ buttonLight.addEventListener('click', () => {
 const loader = document.querySelector('.loader')
 
 window.addEventListener('load', () => {
+    document.body.style.overflow = 'hidden'
     setTimeout(() => {
         loader.classList.add('hidden')
+        document.body.style.removeProperty('overflow', 'hidden')
 
     }, 4000)
     setTimeout(() => {
         loader.remove()
     }, 8000)
 })
+
+
 
 
 function removeNotificationActive(element) {
@@ -276,8 +280,9 @@ backgroundClose(popupWrong, 'popup-wrong')
 
 // ---------------------
 
+
 ScrollReveal().reveal('.main__row-title', {
-    delay: 200,
+    delay: 4300,
     duration: 700,
     origin: 'left',
     scale: 1,
@@ -285,9 +290,25 @@ ScrollReveal().reveal('.main__row-title', {
     distance: '100px'
 })
 ScrollReveal().reveal('.main__row-description', {
-    delay: 700,
+    delay: 4400,
     duration: 700,
     origin: 'left',
+    scale: 1,
+    easing: 'ease-in-out',
+    distance: '100px'
+})
+ScrollReveal().reveal('.btn-main', {
+    delay: 4500,
+    duration: 700,
+    origin: 'center',
+    scale: 1,
+    easing: 'ease-in-out',
+    distance: '100px'
+})
+ScrollReveal().reveal('.main__row-img', {
+    delay: 4600,
+    duration: 700,
+    origin: 'right',
     scale: 1,
     easing: 'ease-in-out',
     distance: '100px'
@@ -348,7 +369,7 @@ ScrollReveal().reveal('.works-slider', {
     scale: 1,
 })
 ScrollReveal().reveal('.about__card', {
-    origin: 'bottom',
+    origin: 'center',
     // reset: true,
     duration: 1000,
     delay: 1000,
