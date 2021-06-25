@@ -108,6 +108,10 @@ const langArray = {
         'en': "Deadline",
         'ru': "Срок"
     },
+    "works-deadline-4": {
+        'en': "Deadline",
+        'ru': "Срок"
+    },
     "works-deadline-a-1": {
         'en': "2 working days",
         'ru': "2 рабочих дня"
@@ -117,6 +121,10 @@ const langArray = {
         'ru': "4 рабочих дня"
     },
     "works-deadline-a-3": {
+        'en': "1 working day",
+        'ru': "1 рабочий день"
+    },
+    "works-deadline-a-4": {
         'en': "1 working day",
         'ru': "1 рабочий день"
     },
@@ -132,6 +140,10 @@ const langArray = {
         'en': "Cost",
         'ru': "Стоимость"
     },
+    "works-cost-4": {
+        'en': "Cost",
+        'ru': "Стоимость"
+    },
     "works-task-1": {
         'en': "Task",
         'ru': "Задача"
@@ -141,6 +153,10 @@ const langArray = {
         'ru': "Задача"
     },
     "works-task-3": {
+        'en': "Task",
+        'ru': "Задача"
+    },
+    "works-task-4": {
         'en': "Task",
         'ru': "Задача"
     },
@@ -155,6 +171,10 @@ const langArray = {
     "works-description-3": {
         'en': "To create a concept of a fully responsive website, using features from react, such as react hooks, react router, etc.",
         'ru': "Создать концепт полностью адаптивного сайта, используя при этом возможности библиотеки Реакт - хуки, роутеры и так далее."
+    },
+    "works-description-4": {
+        'en': "To create a concept of a multi-page website with parallax effect and attractive appearance of elements for a studio that is engaged in design development.",
+        'ru': "Создать концепт сайта с несколькими страницами, эффектом параллакса и поочереденым появлением элементов для студии, которая специализируется на дизайне сайтов."
     },
     "contact-title": {
         'en': "Contact me",
