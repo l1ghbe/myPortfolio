@@ -322,6 +322,9 @@
         width: 160px;
         height: 160px;
     }
+    .works__img-content {
+        display: none;
+    }
 
 }
 @media (max-width: 693px) {
@@ -391,6 +394,10 @@
     }
     .works-slide__row-text-task {
         align-items: center;
+    }
+    
+    .works-slide__row-img img:hover {
+        transform: scale(1);
     }
 }
 
@@ -589,6 +596,10 @@
     }
     .form__textarea-label {
         font-size: 0.9rem;
+    }
+    .main__row-text {
+        overflow: hidden;
+        background: rgba(0,0,0,0.5);
     }
     
 }
