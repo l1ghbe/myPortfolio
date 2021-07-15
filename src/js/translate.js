@@ -193,8 +193,8 @@ const langArray = {
         'ru': "Создать концепт сайта с несколькими страницами, эффектом параллакса и поочереденым появлением элементов для студии, которая специализируется на дизайне сайтов."
     },
     "works-description-5": {
-        'en': "Our task was to develop the front-end of the application with the possibility of supplementing it with text, pictures, as well as expanding it in the future.",
-        'ru': "Перед нами стояла задача разработать front-end часть приложения с возможностью дополнения его текстом, картинками, а также расширения его в будущем."
+        'en': "Our task was to develop the front-end of the multi-page application with the possibility of supplementing it with text, pictures, as well as expanding it in the future.",
+        'ru': "Перед нами стояла задача разработать front-end часть многостраничного приложения с возможностью дополнения его текстом, картинками, а также расширения его в будущем."
     },
     "contact-title": {
         'en': "Contact me",
