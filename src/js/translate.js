@@ -112,6 +112,10 @@ const langArray = {
         'en': "Deadline",
         'ru': "Срок"
     },
+    "works-deadline-5": {
+        'en': "Deadline",
+        'ru': "Срок"
+    },
     "works-deadline-a-1": {
         'en': "2 working days",
         'ru': "2 рабочих дня"
@@ -128,6 +132,10 @@ const langArray = {
         'en': "1 working day",
         'ru': "1 рабочий день"
     },
+    "works-deadline-a-5": {
+        'en': "16 working days",
+        'ru': "16 рабочих дней"
+    },
     "works-cost-1": {
         'en': "Cost",
         'ru': "Стоимость"
@@ -141,6 +149,10 @@ const langArray = {
         'ru': "Стоимость"
     },
     "works-cost-4": {
+        'en': "Cost",
+        'ru': "Стоимость"
+    },
+    "works-cost-5": {
         'en': "Cost",
         'ru': "Стоимость"
     },
@@ -160,6 +172,10 @@ const langArray = {
         'en': "Task",
         'ru': "Задача"
     },
+    "works-task-5": {
+        'en': "Task",
+        'ru': "Задача"
+    },
     "works-description-1": {
         'en': "Create a website that would show the existence of a company that supplies medical equipment",
         'ru': "Создать сайт-визитку, который бы познакомил пользователя с компанией, которая поставляет медицинское оборудование"
@@ -175,6 +191,10 @@ const langArray = {
     "works-description-4": {
         'en': "To create a concept of a multi-page website with parallax effect and attractive appearance of elements for a studio that is engaged in design development.",
         'ru': "Создать концепт сайта с несколькими страницами, эффектом параллакса и поочереденым появлением элементов для студии, которая специализируется на дизайне сайтов."
+    },
+    "works-description-5": {
+        'en': "Our task was to develop the front-end of the application with the possibility of supplementing it with text, pictures, as well as expanding it in the future.",
+        'ru': "Перед нами стояла задача разработать front-end часть приложения с возможностью дополнения его текстом, картинками, а также расширения его в будущем."
     },
     "contact-title": {
         'en': "Contact me",
