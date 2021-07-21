@@ -393,6 +393,7 @@ body {
     transition: .4s;
 }
 .logotype {
+    display: none;
     width: 130px;
     height: 44px;
 }
@@ -402,9 +403,11 @@ body {
 }
 
 .hidden-logo {
-    display: none;
-    font-size: 2.2rem;
+    // display: none;
+    display: block;
+    font-size: 2.1rem;
     text-decoration: none;
+    transition: .4s;
     color:#fff;
     @extend %cooper;
 }
@@ -429,6 +432,9 @@ body {
     .logotype {
         width: 100px;
         height: 44px;
+    }
+    .hidden-logo {
+        font-size: 1.75rem;
     }
 }
 

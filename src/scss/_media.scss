@@ -241,6 +241,9 @@
     
 }
 @media (max-width: 768px) {
+    .header-fixed {
+        padding: 20px 30px !important;
+    }
 
     .popup-wrong__body,
     .popup-success__body {
@@ -492,7 +495,7 @@
     }
     .header-fixed {
         .hidden-logo {
-            font-size: 1.8rem;
+            font-size: 1.75rem;
             
         }
     }
@@ -561,7 +564,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) !important;
     }
     .btn-main {
         padding: 19px 37px;
