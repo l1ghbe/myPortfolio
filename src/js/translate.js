@@ -116,6 +116,10 @@ const langArray = {
         'en': "Deadline",
         'ru': "Срок"
     },
+    "works-deadline-6": {
+        'en': "Deadline",
+        'ru': "Срок"
+    },
     "works-deadline-a-1": {
         'en': "2 working days",
         'ru': "2 рабочих дня"
@@ -136,6 +140,10 @@ const langArray = {
         'en': "16 working days",
         'ru': "16 рабочих дней"
     },
+    "works-deadline-a-6": {
+        'en': "4 working days",
+        'ru': "4 рабочих дней"
+    },
     "works-cost-1": {
         'en': "Cost",
         'ru': "Стоимость"
@@ -153,6 +161,10 @@ const langArray = {
         'ru': "Стоимость"
     },
     "works-cost-5": {
+        'en': "Cost",
+        'ru': "Стоимость"
+    },
+    "works-cost-6": {
         'en': "Cost",
         'ru': "Стоимость"
     },
@@ -176,6 +188,10 @@ const langArray = {
         'en': "Task",
         'ru': "Задача"
     },
+    "works-task-6": {
+        'en': "Task",
+        'ru': "Задача"
+    },
     "works-description-1": {
         'en': "Create a website that would show the existence of a company that supplies medical equipment",
         'ru': "Создать сайт-визитку, который бы познакомил пользователя с компанией, которая поставляет медицинское оборудование"
@@ -195,6 +211,10 @@ const langArray = {
     "works-description-5": {
         'en': "Our task was to develop the front-end of the multi-page application with the possibility of supplementing it with text, pictures, as well as expanding it in the future.",
         'ru': "Перед нами стояла задача разработать front-end часть многостраничного приложения с возможностью дополнения его текстом, картинками, а также расширения его в будущем."
+    },
+    "works-description-6": {
+        'en': "Create a website about cryptocurrency, where you can see the state of the market, evaluate the dynamics of cryptocurrency prices, read news about a specific token and see information about cryptocurrency exchanges.",
+        'ru': "Создать сайт о криптовалюте, на котором можно посмотреть состояние рынка, оценить динамику цен криптовалюты, почитать новости о конкретном токене и посмотреть информацию о криптовалютных биржах."
     },
     "contact-title": {
         'en': "Contact me",
