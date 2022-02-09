@@ -21,7 +21,7 @@ const langArray = {
     },
     "main-title": {
         'en': "Hi, I'm Ivan <br /> junior web developer",
-        'ru': 'Привет, я - Иван <br /> джуниор веб-разработчик'
+        'ru': 'Привет, я - Иван <br /> веб-разработчик'
     },
     "main-description": {
         'en': "Making websites for your needs",
@@ -120,6 +120,10 @@ const langArray = {
         'en': "Deadline",
         'ru': "Срок"
     },
+    "works-deadline-7": {
+        'en': "Deadline",
+        'ru': "Срок"
+    },
     "works-deadline-a-1": {
         'en': "2 working days",
         'ru': "2 рабочих дня"
@@ -144,6 +148,10 @@ const langArray = {
         'en': "4 working days",
         'ru': "4 рабочих дней"
     },
+    "works-deadline-a-7": {
+        'en': "3 working days",
+        'ru': "3 рабочих дней"
+    },
     "works-cost-1": {
         'en': "Cost",
         'ru': "Стоимость"
@@ -165,6 +173,10 @@ const langArray = {
         'ru': "Стоимость"
     },
     "works-cost-6": {
+        'en': "Cost",
+        'ru': "Стоимость"
+    },
+    "works-cost-7": {
         'en': "Cost",
         'ru': "Стоимость"
     },
@@ -192,6 +204,10 @@ const langArray = {
         'en': "Task",
         'ru': "Задача"
     },
+    "works-task-7": {
+        'en': "Task",
+        'ru': "Задача"
+    },
     "works-description-1": {
         'en': "Create a website that would show the existence of a company that supplies medical equipment",
         'ru': "Создать сайт-визитку, который бы познакомил пользователя с компанией, которая поставляет медицинское оборудование"
@@ -215,6 +231,10 @@ const langArray = {
     "works-description-6": {
         'en': "Create a website about cryptocurrency, where you can see the state of the market, evaluate the dynamics of cryptocurrency prices, read news about a specific token and see information about cryptocurrency exchanges.",
         'ru': "Создать сайт о криптовалюте, на котором можно посмотреть состояние рынка, оценить динамику цен криптовалюты, почитать новости о конкретном токене и посмотреть информацию о криптовалютных биржах."
+    },
+    "works-description-7": {
+        'en': "The task of developing this site was to introduce the user to a company that supplies medical equipment. The main idea was that the user would go to the site, see what the company is doing and contact it through convenient means of communication. The design and development were created from scratch.",
+        'ru': "Задача разработки этого сайта заключалась в знакомстве пользователя с компанией, которая занимается поставками медицинского оборудования. Основная идея заключалась в том, что пользователь зайдет на сайт, увидит то, чем занимается компания и свяжется с ней через удобные ему средства связи. Дизайн и разработка были созданы с нуля."
     },
     "contact-title": {
         'en': "Contact me",

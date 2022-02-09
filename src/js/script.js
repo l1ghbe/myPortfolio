@@ -94,10 +94,13 @@ cardHtml.addEventListener('click', () => {
     selectProgress('HTML', '93%', '93%');
 }) 
 cardJs.addEventListener('click', () => {
-    selectProgress('JavaScript', '61%', '61%');
+    selectProgress('JavaScript', '87%', '61%');
 }) 
+// cardPython.addEventListener('click', () => {
+//     selectProgress('Python', 'Basics', '100%', 'purple');
+// }) 
 cardPython.addEventListener('click', () => {
-    selectProgress('Python', 'Basics', '100%', 'purple');
+    selectProgress('React', '80%', '80%', 'purple');
 }) 
 
 //Language
