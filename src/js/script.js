@@ -344,7 +344,7 @@ ScrollReveal().reveal('.subtext-right', {
 })
 ScrollReveal().reveal('.grid-card__img', {
     origin: 'top',
-    duration: 1000,
+    duration: 800,
     delay: 800,
     distance: '5px',
     easing: 'ease-in-out',
@@ -356,8 +356,8 @@ ScrollReveal().reveal('.grid-card__img', {
 })
 ScrollReveal().reveal('.grid-card__title', {
     origin: 'bottom',
-    duration: 1000,
-    delay: 1500,
+    duration: 800,
+    delay: 1000,
     distance: '25px',
     easing: 'ease-in-out',
     scale: 1,
@@ -374,32 +374,32 @@ ScrollReveal().reveal('.works-slider', {
 ScrollReveal().reveal('.about__card', {
     origin: 'center',
     // reset: true,
-    duration: 1000,
-    delay: 1000,
+    duration: 500,
+    delay: 300,
     distance: '25px',
     easing: 'ease',
     scale: 1,
 })
 ScrollReveal().reveal('.card__content-title', {
     origin: 'top',
-    duration: 1000,
-    delay: 1500,
+    duration: 800,
+    delay: 1200,
     distance: '25px',
     easing: 'ease',
     scale: 1,
 })
 ScrollReveal().reveal('.card__text-question', {
     origin: 'left',
-    duration: 1000,
-    delay: 2000,
+    duration: 800,
+    delay: 1500,
     distance: '15px',
     easing: 'ease',
     scale: 1,
 })
 ScrollReveal().reveal('.card__text-answer', {
     origin: 'left',
-    duration: 1000,
-    delay: 2500,
+    duration: 800,
+    delay: 1700,
     distance: '25px',
     easing: 'ease',
     scale: 1,
