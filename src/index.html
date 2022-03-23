@@ -1,559 +1,1218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ivan Lighbe">
-    <meta name="description" content="Creating websites for your business with pure and understandable code">
-    <meta name="keywords" content="HTML, CSS, JavaScript, js, create a website, make a website, создать сайт, lighbe, l1ghbe, lighbe portfolio, l1ghbe portfolio, website development">
-    <title>Creating websites | Lighbe</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,800,900" rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/fav/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="manifest" href="./img/fav/site.webmanifest">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/rnh2ozz.css">
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-    <div class="page-wrapper">
-        <div class="loader">
-            <svg class="loader-img" xmlns="http://www.w3.org/2000/svg" width="351.871" height="417.265" viewBox="0 0 351.871 417.265">
-                <path id="loader-img-lightning" d="M888.981,1432.8,723.536,1586.007l141.484-26.089L703.467,1680.329l149.511-29.1L681.13,1820.269l308.314-234.262-100.464,16.311,100.464-96.943-118.4,15.409,118.4-87.984Z" transform="translate(-549.098 -1472.114) rotate(4)" fill="none" stroke="#fff" stroke-width="9"/>
-            </svg>
-            <h4 class="loader-text">Lighbe</h4>
-        </div>
-        <header class="header">
-            <div class="header__row">
-                <a href="#home" class="logo">
-                    <img src="./img/logo.svg" class="logotype" alt="Logo">
-                    <h2 class="hidden-logo">Lighbe</h2>
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item"><a href="#home" data-page="home" class="lg-home menu__list-link">Home</a></li>
-                        <li class="menu__list-item"><a href="#about" data-page="about" class="lg-about menu__list-link">About</a></li>
-                        <li class="menu__list-item"><a href="#skills" data-page="skills" class="lg-skills menu__list-link">Skills</a></li>
-                        <li class="menu__list-item"><a href="#works" data-page="works" class="lg-works menu__list-link">Works</a></li>
-                        <li class="menu__list-item"><a href="#contact" data-page="contact" class="lg-contact menu__list-link">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="dropdown">
-                    <div class="dropbtn"><span class="dropbtn-span">ENG</span> <img src="./img/arrowdown.svg" alt="arrow-down"></div>
-                    <div class="dropdown-content">
-                        <a href="#" class="dropdown-content-eng">ENG</a>
-                        <a href="#" class="dropdown-content-rus">RU</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Ivan Lighbe" />
+        <meta
+            name="description"
+            content="Creating websites for your business with pure and understandable code"
+        />
+        <meta
+            name="keywords"
+            content="HTML, CSS, JavaScript, js, create a website, make a website, создать сайт, lighbe, l1ghbe, lighbe portfolio, l1ghbe portfolio, website development"
+        />
+        <title>Creating websites | Lighbe</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,800,900"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./img/fav/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/fav/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./img/fav/favicon-16x16.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="manifest" href="./img/fav/site.webmanifest" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="https://use.typekit.net/rnh2ozz.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="loader">
+                <svg
+                    class="loader-img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="351.871"
+                    height="417.265"
+                    viewBox="0 0 351.871 417.265"
+                >
+                    <path
+                        id="loader-img-lightning"
+                        d="M888.981,1432.8,723.536,1586.007l141.484-26.089L703.467,1680.329l149.511-29.1L681.13,1820.269l308.314-234.262-100.464,16.311,100.464-96.943-118.4,15.409,118.4-87.984Z"
+                        transform="translate(-549.098 -1472.114) rotate(4)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-width="9"
+                    />
+                </svg>
+                <h4 class="loader-text">Lighbe</h4>
+            </div>
+            <header class="header">
+                <div class="header__row">
+                    <a href="#home" class="logo">
+                        <img src="./img/logo.svg" class="logotype" alt="Logo" />
+                        <h2 class="hidden-logo">Lighbe</h2>
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a
+                                    href="#home"
+                                    data-page="home"
+                                    class="lg-home menu__list-link"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="menu__list-item">
+                                <a
+                                    href="#about"
+                                    data-page="about"
+                                    class="lg-about menu__list-link"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="menu__list-item">
+                                <a
+                                    href="#skills"
+                                    data-page="skills"
+                                    class="lg-skills menu__list-link"
+                                    >Skills</a
+                                >
+                            </li>
+                            <li class="menu__list-item">
+                                <a
+                                    href="#works"
+                                    data-page="works"
+                                    class="lg-works menu__list-link"
+                                    >Works</a
+                                >
+                            </li>
+                            <li class="menu__list-item">
+                                <a
+                                    href="#contact"
+                                    data-page="contact"
+                                    class="lg-contact menu__list-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <span class="dropbtn-span">ENG</span>
+                            <img src="./img/arrowdown.svg" alt="arrow-down" />
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-content-eng">ENG</a>
+                            <a href="#" class="dropdown-content-rus">RU</a>
+                        </div>
+                    </div>
+                    <div class="header__burger">
+                        <a href="#" class="header__burger-btn">
+                            <span></span>
+                        </a>
                     </div>
                 </div>
-                <div class="header__burger">
-                    <a href="#" class="header__burger-btn">
-                        <span></span>
+            </header>
+            <main class="main" id="home">
+                <div class="container">
+                    <div class="main__row">
+                        <div class="main__row-text">
+                            <h2 class="main__row-title lg-main-title">
+                                Hi, I'm Ivan <br />web developer
+                            </h2>
+                            <p
+                                class="main__row-description lg-main-description"
+                            >
+                                Making websites for your needs
+                            </p>
+                            <a href="#works" class="btn btn-main lg-contact-btn"
+                                >See my works</a
+                            >
+                        </div>
+                        <div class="main__row-img">
+                            <svg
+                                class="lightning"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="351.871"
+                                height="417.265"
+                                viewBox="0 0 351.871 417.265"
+                            >
+                                <path
+                                    id="lightning"
+                                    d="M888.981,1432.8,723.536,1586.007l141.484-26.089L703.467,1680.329l149.511-29.1L681.13,1820.269l308.314-234.262-100.464,16.311,100.464-96.943-118.4,15.409,118.4-87.984Z"
+                                    transform="translate(-549.098 -1472.114) rotate(4)"
+                                    fill="none"
+                                    stroke="#fff"
+                                    stroke-width="9"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-down">
+                    <a href="#about">
+                        <img src="./img/arrowdown.svg" alt="Down Arrow" />
                     </a>
                 </div>
-            </div>
-        </header>
-        <main class="main" id="home">
-            <div class="container">
-                <div class="main__row">
-                    <div class="main__row-text">
-                        <h2 class="main__row-title lg-main-title">Hi, I'm Ivan <br />web developer</h2>
-                        <p class="main__row-description lg-main-description">Making websites for your needs</p>
-                        <a href="#works" class="btn btn-main lg-contact-btn">See my works</a>
-                    </div>
-                    <div class="main__row-img">
-                        <svg class="lightning" xmlns="http://www.w3.org/2000/svg" width="351.871" height="417.265" viewBox="0 0 351.871 417.265">
-                            <path id="lightning" d="M888.981,1432.8,723.536,1586.007l141.484-26.089L703.467,1680.329l149.511-29.1L681.13,1820.269l308.314-234.262-100.464,16.311,100.464-96.943-118.4,15.409,118.4-87.984Z" transform="translate(-549.098 -1472.114) rotate(4)" fill="none" stroke="#fff" stroke-width="9"/>
-                        </svg>
+                <div class="main__settings">
+                    <i
+                        class="fas fa-cog main__settings-icon"
+                        title="Change theme"
+                    ></i>
+                    <!-- <img src="./img/settings.svg" class="main__settings-icon" alt="Change theme"> -->
+                    <div class="main__settings-colors">
+                        <div class="main__colors-dark" title="dark"></div>
+                        <div class="main__colors-light" title="light"></div>
+                        <div class="main__colors-default" title="default"></div>
                     </div>
                 </div>
-            </div>
-            <div class="arrow-down">
-                <a href="#about">
-                    <img src="./img/arrowdown.svg" alt="Down Arrow">
-                </a>
-            </div>
-            <div class="main__settings">
-                <i class="fas fa-cog main__settings-icon" title="Change theme"></i>
-                <!-- <img src="./img/settings.svg" class="main__settings-icon" alt="Change theme"> -->
-                <div class="main__settings-colors">
-                    <div class="main__colors-dark" title="dark"></div>
-                    <div class="main__colors-light" title="light"></div>
-                    <div class="main__colors-default" title="default"></div>
-                </div>
-            </div>
-        </main>
-        <section class="about" id="about">
-            <span class="title__subtext lg-about-subtext">About</span>
-            <h3 class="title__text lg-about-text">About me</h3>
-            <div class="card">
-                <div class="circle-1"></div>
-                <div class="circle-2"></div>
-                <div class="about__card">
-                    <div class="about__card-content">
-                        <h2 class="card__content-title lg-about-title">My name is Ivan and I am a web developer.</h2>
-                        <div class="about__card-text">
-                            <h3 class="card__text-question lg-about-question-who">Who am I?</h3>
-                            <p class="card__text-answer lg-about-answer-who-1">- Well-organized and responsible person from Eastern Europe who loves his job - creating websites.</p>
-                            <!-- <p class="card__text-answer lg-about-answer-who-2">- Really cares about his work quality, so be sure of the quality of the work provided </p> -->
-                            <p class="card__text-answer lg-about-answer-who-2">- Do my best to improve the quality of work for your future needs 😉 </p>
+            </main>
+            <section class="about" id="about">
+                <span class="title__subtext lg-about-subtext">About</span>
+                <h3 class="title__text lg-about-text">About me</h3>
+                <div class="card">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <div class="about__card">
+                        <div class="about__card-content">
+                            <h2 class="card__content-title lg-about-title">
+                                My name is Ivan and I am a web developer.
+                            </h2>
+                            <div class="about__card-text">
+                                <h3
+                                    class="card__text-question lg-about-question-who"
+                                >
+                                    Who am I?
+                                </h3>
+                                <p
+                                    class="card__text-answer lg-about-answer-who-1"
+                                >
+                                    - Well-organized and responsible person from
+                                    Eastern Europe who loves his job - creating
+                                    websites.
+                                </p>
+                                <!-- <p class="card__text-answer lg-about-answer-who-2">- Really cares about his work quality, so be sure of the quality of the work provided </p> -->
+                                <p
+                                    class="card__text-answer lg-about-answer-who-2"
+                                >
+                                    - Do my best to improve the quality of work
+                                    for your future needs 😉
+                                </p>
+                            </div>
+                            <div class="about__card-text">
+                                <h3
+                                    class="card__text-question lg-about-question-what"
+                                >
+                                    What can I provide?
+                                </h3>
+                                <p
+                                    class="card__text-answer lg-about-answer-what-1"
+                                >
+                                    - I can help develop your business / any
+                                    other idea by creating a website with the
+                                    existing design or completely from scratch
+                                </p>
+                                <p
+                                    class="card__text-answer lg-about-answer-what-2"
+                                >
+                                    - Provide work just in time (otherwise you
+                                    will receive a generous discount for the
+                                    work I have done)
+                                </p>
+                            </div>
                         </div>
-                        <div class="about__card-text">
-                            <h3 class="card__text-question lg-about-question-what">What can I provide?</h3>
-                            <p class="card__text-answer lg-about-answer-what-1">- I can help develop your business / any other idea by creating a website with the existing design or completely from scratch</p>
-                            <p class="card__text-answer lg-about-answer-what-2">- Provide work just in time (otherwise you will receive a generous discount for the work I have done)  </p>
-                        </div>
+                        <a
+                            href="#contact"
+                            class="btn btn-about lg-contact-btn-2"
+                            >Contact me</a
+                        >
                     </div>
-                    <a href="#contact" class="btn btn-about lg-contact-btn-2">Contact me</a>
+                </div>
+            </section>
 
-                </div>
-            </div>
-            
-        </section>
-
-        <section class="skills" id="skills">
-            <span class="subtext-right lg-skills-subtext">Skills</span>
-            <h3 class="title__text text-skills lg-skills-text">Skills</h3>
-            <div class="container">
-                <div class="skills__rows">
-                    <div class="skills__row-grid">
-                        <div id="card-html" class="skills__row-grid-card">
-                            <div class="grid-card__img">
-                                <img src="./img/html.png" alt="Card HTML">
+            <section class="skills" id="skills">
+                <span class="subtext-right lg-skills-subtext">Skills</span>
+                <h3 class="title__text text-skills lg-skills-text">Skills</h3>
+                <div class="container">
+                    <div class="skills__rows">
+                        <div class="skills__row-grid">
+                            <div id="card-html" class="skills__row-grid-card">
+                                <div class="grid-card__img">
+                                    <img src="./img/html.png" alt="Card HTML" />
+                                </div>
+                                <h3 class="grid-card__title">HTML</h3>
                             </div>
-                            <h3 class="grid-card__title">HTML</h3>
-                        </div>
-                        <div id="card-css" class="skills__row-grid-card">
-                            <div class="grid-card__img">
-                                <img src="./img/css.png" alt="Card CSS">
+                            <div id="card-css" class="skills__row-grid-card">
+                                <div class="grid-card__img">
+                                    <img src="./img/css.png" alt="Card CSS" />
+                                </div>
+                                <h3 class="grid-card__title">CSS</h3>
                             </div>
-                            <h3 class="grid-card__title">CSS</h3>
-                        </div>
-                        <div id="card-js" class="skills__row-grid-card">
-                            <div class="grid-card__img">
-                                <img src="./img/js.png" alt="Card Js">
+                            <div id="card-js" class="skills__row-grid-card">
+                                <div class="grid-card__img">
+                                    <img src="./img/js.png" alt="Card Js" />
+                                </div>
+                                <h3 class="grid-card__title">JavaScript</h3>
                             </div>
-                            <h3 class="grid-card__title">JavaScript</h3>
-                        </div>
-                        <div id="card-python" class="skills__row-grid-card">
-                            <div class="grid-card__img">
-                                <img src="./img/react1.png" alt="Card Python">
+                            <div id="card-python" class="skills__row-grid-card">
+                                <div class="grid-card__img">
+                                    <img
+                                        src="./img/react1.png"
+                                        alt="Card Python"
+                                    />
+                                </div>
+                                <h3 class="grid-card__title">React JS</h3>
                             </div>
-                            <h3 class="grid-card__title">React JS</h3>
-                        </div>
-                        <!-- <div id="card-python" class="skills__row-grid-card">
+                            <!-- <div id="card-python" class="skills__row-grid-card">
                             <div class="grid-card__img">
                                 <img src="./img/python.png" alt="Card Python">
                             </div>
                             <h3 class="grid-card__title">Python</h3>
                         </div> -->
-                    </div>
-                    <div class="skills__row-info">
-                        <div class="progress">
-                            <h3 class="progress-name">~</h3>
-                            <div class="progress-bar">
-                                <div class="progress-bar__value"></div>
-                            </div>
-                            <h4 class="progress-value">~%</h4>
                         </div>
-                        <div class="skills__row-text">
-                            <h2 class="skills__row-text-word lg-skills-also">Also: <span></span>
-                                <div class="skills__row-text-words">
-                                    <span>Flexbox</span>
-                                    <span>Grid</span>
-                                    <span>Gulp</span>
-                                    <span>Sass</span>
-                                    <span>Scss</span>
-                                    <!-- <span>ReactJs</span> -->
-                                    <span>Redux</span>
-                                    <span>TypeScript</span>
+                        <div class="skills__row-info">
+                            <div class="progress">
+                                <h3 class="progress-name">~</h3>
+                                <div class="progress-bar">
+                                    <div class="progress-bar__value"></div>
                                 </div>
-                                <div class="skills__row-text-full">
-                                    <p class="skills__text-full">Flexbox, Grid, Bootstrap/Material UI/Tailwind, Gulp, Sass, Scss, Redux, TypeScript, Git, NodeJs, Express js </p>
-                                </div>
-                            </h2>
+                                <h4 class="progress-value">~%</h4>
+                            </div>
+                            <div class="skills__row-text">
+                                <h2
+                                    class="skills__row-text-word lg-skills-also"
+                                >
+                                    Also: <span></span>
+                                    <div class="skills__row-text-words">
+                                        <span>Flexbox</span>
+                                        <span>Grid</span>
+                                        <span>Gulp</span>
+                                        <span>Sass</span>
+                                        <span>Scss</span>
+                                        <!-- <span>ReactJs</span> -->
+                                        <span>Redux</span>
+                                        <span>TypeScript</span>
+                                    </div>
+                                    <div class="skills__row-text-full">
+                                        <p class="skills__text-full">
+                                            Flexbox, Grid, Bootstrap/Material
+                                            UI/Tailwind, Gulp, Sass, Scss,
+                                            Redux, TypeScript, Git, NodeJs,
+                                            Express js
+                                        </p>
+                                    </div>
+                                </h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="works" id="works">
-            <span class="title__subtext lg-works-subtext">Works</span>
-            <h3 class="title__text lg-works-text">Works</h3>
-            <div class="works-slider swiper-container">
-                <div class="swiper-wrapper">
-                    
-                    <div class="works-slide swiper-slide">
-                        <div class="works-slide__row">
-                            <a href="https://acemed.netlify.app" target="_blank" rel="noreferrer" class="works-slide__row-img">
-                                <img src='./img/slider/acemed.jpg' alt="Complitech">
-                                <div class="works__img-content">
-                                    <h4 class="works__img-text">HTML, SCSS, Javascript, Gulp, GSAP</h4>
-                                </div>
-                            </a>
-                            <div class="works-slide__row-text">
-                                <a href="https://acemed.netlify.app" target="_blank" rel="noreferrer" class="works-slide__row-text-title">Acemed</a>
-                                <div class="works-slide__row-param">
-                                    <div class="deadline">
-                                        <img src="./img/layer1.svg" alt="Time">
-                                        <div class="works-slide__row-text-deadline">
-                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-7">Deadline</h4>
-                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-7">3 working days</p>
+            <section class="works" id="works">
+                <span class="title__subtext lg-works-subtext">Works</span>
+                <h3 class="title__text lg-works-text">Works</h3>
+                <div class="works-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__row">
+                                <a
+                                    href="https://acemed.netlify.app"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="works-slide__row-img"
+                                >
+                                    <img
+                                        src="./img/slider/acemed.jpg"
+                                        alt="Complitech"
+                                    />
+                                    <div class="works__img-content">
+                                        <h4 class="works__img-text">
+                                            HTML, SCSS, Javascript, Gulp, GSAP
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div class="works-slide__row-text">
+                                    <a
+                                        href="https://acemed.netlify.app"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        class="works-slide__row-text-title"
+                                        >Acemed</a
+                                    >
+                                    <div class="works-slide__row-param">
+                                        <div class="deadline">
+                                            <img
+                                                src="./img/layer1.svg"
+                                                alt="Time"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-deadline"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-deadline-title lg-works-deadline-7"
+                                                >
+                                                    Deadline
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-deadline-description lg-works-deadline-a-7"
+                                                >
+                                                    3 working days
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cost">
+                                            <img
+                                                src="./img/money.svg"
+                                                alt="Money"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-cost"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-cost-title lg-works-cost-7"
+                                                >
+                                                    Cost
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-cost-description"
+                                                >
+                                                    150$
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="cost">
-                                        <img src="./img/money.svg" alt="Money">
-                                        <div class="works-slide__row-text-cost">
-                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-7">Cost</h4>
-                                            <p class="works-slide__row-text-cost-description">150$</p>
-                                        </div>
+                                    <div class="works-slide__row-text-task">
+                                        <h4
+                                            class="works-slide__row-text-task-title lg-works-task-7"
+                                        >
+                                            Task
+                                        </h4>
+                                        <p
+                                            class="works-slide__row-text-task-description lg-works-description-7"
+                                        >
+                                            The task of developing this site was
+                                            to introduce the user to a company
+                                            that supplies medical equipment. The
+                                            main idea was that the user would go
+                                            to the site, see what the company is
+                                            doing and contact it through
+                                            convenient means of communication.
+                                            The design and development were
+                                            created from scratch.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-7">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-7">The task of developing this site was to introduce the user to a company that supplies medical equipment. The main idea was that the user would go to the site, see what the company is doing and contact it through convenient means of communication. The design and development were created from scratch.</p>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__row">
+                                <a
+                                    href="https://l1ghbe.github.io/complitech/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="works-slide__row-img"
+                                >
+                                    <img
+                                        src="./img/slider/complitech.jpg"
+                                        alt="Complitech"
+                                    />
+                                    <div class="works__img-content">
+                                        <h4 class="works__img-text">
+                                            HTML, CSS, Javascript, PHP
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div class="works-slide__row-text">
+                                    <a
+                                        href="https://l1ghbe.github.io/complitech/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        class="works-slide__row-text-title"
+                                        >Complitech</a
+                                    >
+                                    <div class="works-slide__row-param">
+                                        <div class="deadline">
+                                            <img
+                                                src="./img/layer1.svg"
+                                                alt="Time"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-deadline"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-deadline-title lg-works-deadline-1"
+                                                >
+                                                    Deadline
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-deadline-description lg-works-deadline-a-1"
+                                                >
+                                                    2 working days
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cost">
+                                            <img
+                                                src="./img/money.svg"
+                                                alt="Money"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-cost"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-cost-title lg-works-cost-1"
+                                                >
+                                                    Cost
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-cost-description"
+                                                >
+                                                    90$
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="works-slide__row-text-task">
+                                        <h4
+                                            class="works-slide__row-text-task-title lg-works-task-1"
+                                        >
+                                            Task
+                                        </h4>
+                                        <p
+                                            class="works-slide__row-text-task-description lg-works-description-1"
+                                        >
+                                            Create a website that would show the
+                                            existence of a company that supplies
+                                            medical equipment
+                                        </p>
+                                    </div>
                                 </div>
-                                
-                                
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__row">
+                                <a
+                                    href="https://real-estate-bice.vercel.app/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="works-slide__row-img"
+                                >
+                                    <img
+                                        src="./img/slider/real-estate.jpg"
+                                        alt="Real Estate"
+                                    />
+                                    <div class="works__img-content">
+                                        <h4 class="works__img-text">
+                                            React Js, Next Js, Redux Toolkit,
+                                            SCSS
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div class="works-slide__row-text">
+                                    <a
+                                        href="https://real-estate-bice.vercel.app/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        class="works-slide__row-text-title"
+                                        >Real Estate</a
+                                    >
+                                    <div class="works-slide__row-param">
+                                        <div class="deadline">
+                                            <img
+                                                src="./img/layer1.svg"
+                                                alt="Time"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-deadline"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-deadline-title lg-works-deadline-5"
+                                                >
+                                                    Deadline
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-deadline-description lg-works-deadline-a-5"
+                                                >
+                                                    16 working days
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cost">
+                                            <img
+                                                src="./img/money.svg"
+                                                alt="Money"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-cost"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-cost-title lg-works-cost-5"
+                                                >
+                                                    Cost
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-cost-description"
+                                                >
+                                                    390$
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="works-slide__row-text-task">
+                                        <h4
+                                            class="works-slide__row-text-task-title lg-works-task-5"
+                                        >
+                                            Task
+                                        </h4>
+                                        <p
+                                            class="works-slide__row-text-task-description lg-works-description-5"
+                                        >
+                                            Our task was to develop the
+                                            front-end of the multi-page
+                                            application with the possibility of
+                                            supplementing it with text,
+                                            pictures, as well as expanding it in
+                                            the future.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__row">
+                                <a
+                                    href="https://coins-buddy.vercel.app/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="works-slide__row-img"
+                                >
+                                    <img
+                                        src="./img/slider/coins.jpg"
+                                        alt="MBox"
+                                    />
+                                    <div class="works__img-content">
+                                        <h4 class="works__img-text">
+                                            React Js, Redux Toolkit, Ant Design,
+                                            Rapid API
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div class="works-slide__row-text">
+                                    <a
+                                        href="https://coins-buddy.vercel.app/"
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        class="works-slide__row-text-title"
+                                        >Coins Buddy - crypto portal</a
+                                    >
+                                    <div class="works-slide__row-param">
+                                        <div class="deadline">
+                                            <img
+                                                src="./img/layer1.svg"
+                                                alt="Time"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-deadline"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-deadline-title lg-works-deadline-6"
+                                                >
+                                                    Deadline
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-deadline-description lg-works-deadline-a-6"
+                                                >
+                                                    4 working days
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cost">
+                                            <img
+                                                src="./img/money.svg"
+                                                alt="Money"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-cost"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-cost-title lg-works-cost-6"
+                                                >
+                                                    Cost
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-cost-description"
+                                                >
+                                                    240$
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="works-slide__row-text-task">
+                                        <h4
+                                            class="works-slide__row-text-task-title lg-works-task-6"
+                                        >
+                                            Task
+                                        </h4>
+                                        <p
+                                            class="works-slide__row-text-task-description lg-works-description-6"
+                                        >
+                                            Create a website about
+                                            cryptocurrency, where you can see
+                                            the state of the market, evaluate
+                                            the dynamics of cryptocurrency
+                                            prices, read news about a specific
+                                            token and see information about
+                                            cryptocurrency exchanges.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__row">
+                                <a
+                                    href="https://l1ghbe.github.io/mbox/dist/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="works-slide__row-img"
+                                >
+                                    <img src="./img/slider/mb.jpg" alt="MBox" />
+                                    <div class="works__img-content">
+                                        <h4 class="works__img-text">
+                                            HTML, SCSS, Javascript, Gulp
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div class="works-slide__row-text">
+                                    <a
+                                        href="https://l1ghbe.github.io/mbox/dist/"
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        class="works-slide__row-text-title"
+                                        >Concept: MBOX Cinema</a
+                                    >
+                                    <div class="works-slide__row-param">
+                                        <div class="deadline">
+                                            <img
+                                                src="./img/layer1.svg"
+                                                alt="Time"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-deadline"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-deadline-title lg-works-deadline-2"
+                                                >
+                                                    Deadline
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-deadline-description lg-works-deadline-a-2"
+                                                >
+                                                    4 working days
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cost">
+                                            <img
+                                                src="./img/money.svg"
+                                                alt="Money"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-cost"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-cost-title lg-works-cost-2"
+                                                >
+                                                    Cost
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-cost-description"
+                                                >
+                                                    110$
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="works-slide__row-text-task">
+                                        <h4
+                                            class="works-slide__row-text-task-title lg-works-task-2"
+                                        >
+                                            Task
+                                        </h4>
+                                        <p
+                                            class="works-slide__row-text-task-description lg-works-description-2"
+                                        >
+                                            To create a concept of a website
+                                            that could be used as a news portal
+                                            in the field of cinema.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__row">
+                                <a
+                                    href="https://web-info.netlify.app/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="works-slide__row-img"
+                                >
+                                    <img src="./img/slider/web.jpg" alt="WEB" />
+                                    <div class="works__img-content">
+                                        <h4 class="works__img-text">
+                                            React Js, Scss
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div class="works-slide__row-text">
+                                    <a
+                                        href="https://web-info.netlify.app/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        class="works-slide__row-text-title"
+                                        >Concept: Web Info</a
+                                    >
+                                    <div class="works-slide__row-param">
+                                        <div class="deadline">
+                                            <img
+                                                src="./img/layer1.svg"
+                                                alt="Time"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-deadline"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-deadline-title lg-works-deadline-3"
+                                                >
+                                                    Deadline
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-deadline-description lg-works-deadline-a-3"
+                                                >
+                                                    1 working day
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cost">
+                                            <img
+                                                src="./img/money.svg"
+                                                alt="Money"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-cost"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-cost-title lg-works-cost-3"
+                                                >
+                                                    Cost
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-cost-description"
+                                                >
+                                                    115$
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="works-slide__row-text-task">
+                                        <h4
+                                            class="works-slide__row-text-task-title lg-works-task-3"
+                                        >
+                                            Task
+                                        </h4>
+                                        <p
+                                            class="works-slide__row-text-task-description lg-works-description-3"
+                                        >
+                                            To create a concept of a fully
+                                            responsive website, using features
+                                            from react, such as react hooks,
+                                            react router, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__row">
+                                <a
+                                    href="https://l1ghbe.github.io/raw/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="works-slide__row-img"
+                                >
+                                    <img src="./img/slider/raw.jpg" alt="Raw" />
+                                    <div class="works__img-content">
+                                        <h4 class="works__img-text">
+                                            HTML, SCSS, Javascript, GSAP
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div class="works-slide__row-text">
+                                    <a
+                                        href="https://l1ghbe.github.io/raw/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        class="works-slide__row-text-title"
+                                        >Concept: RAW-Studio</a
+                                    >
+                                    <div class="works-slide__row-param">
+                                        <div class="deadline">
+                                            <img
+                                                src="./img/layer1.svg"
+                                                alt="Time"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-deadline"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-deadline-title lg-works-deadline-4"
+                                                >
+                                                    Deadline
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-deadline-description lg-works-deadline-a-4"
+                                                >
+                                                    1 working day
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cost">
+                                            <img
+                                                src="./img/money.svg"
+                                                alt="Money"
+                                            />
+                                            <div
+                                                class="works-slide__row-text-cost"
+                                            >
+                                                <h4
+                                                    class="works-slide__row-text-cost-title lg-works-cost-4"
+                                                >
+                                                    Cost
+                                                </h4>
+                                                <p
+                                                    class="works-slide__row-text-cost-description"
+                                                >
+                                                    120$
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="works-slide__row-text-task">
+                                        <h4
+                                            class="works-slide__row-text-task-title lg-works-task-4"
+                                        >
+                                            Task
+                                        </h4>
+                                        <p
+                                            class="works-slide__row-text-task-description lg-works-description-4"
+                                        >
+                                            To create a concept of a multi-page
+                                            website with parallax effect and
+                                            attractive appearance of elements
+                                            for a studio that is engaged in
+                                            design development.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="works-slide swiper-slide">
-                        <div class="works-slide__row">
-                            <a href="https://l1ghbe.github.io/complitech/" target="_blank" rel="noreferrer" class="works-slide__row-img">
-                                <img src='./img/slider/complitech.jpg' alt="Complitech">
-                                <div class="works__img-content">
-                                    <h4 class="works__img-text">HTML, CSS, Javascript, PHP</h4>
-                                </div>
-                            </a>
-                            <div class="works-slide__row-text">
-                                <a href="https://l1ghbe.github.io/complitech/" target="_blank" rel="noreferrer" class="works-slide__row-text-title">Complitech</a>
-                                <div class="works-slide__row-param">
-                                    <div class="deadline">
-                                        <img src="./img/layer1.svg" alt="Time">
-                                        <div class="works-slide__row-text-deadline">
-                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-1">Deadline</h4>
-                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-1">2 working days</p>
-                                        </div>
-                                    </div>
-                                    <div class="cost">
-                                        <img src="./img/money.svg" alt="Money">
-                                        <div class="works-slide__row-text-cost">
-                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-1">Cost</h4>
-                                            <p class="works-slide__row-text-cost-description">90$</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-1">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-1">Create a website that would show the existence of a company that supplies medical equipment</p>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works-slide swiper-slide">
-                        <div class="works-slide__row">
-                            <a href="https://real-estate-bice.vercel.app/" target="_blank" rel="noreferrer" class="works-slide__row-img">
-                                <img src='./img/slider/real-estate.jpg' alt="Real Estate">
-                                <div class="works__img-content">
-                                    <h4 class="works__img-text">React Js, Next Js, Redux Toolkit, SCSS</h4>
-                                </div>
-                            </a>
-                            <div class="works-slide__row-text">
-                                <a href="https://real-estate-bice.vercel.app/" target="_blank" rel="noreferrer" class="works-slide__row-text-title">Real Estate</a>
-                                <div class="works-slide__row-param">
-                                    <div class="deadline">
-                                        <img src="./img/layer1.svg" alt="Time">
-                                        <div class="works-slide__row-text-deadline">
-                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-5">Deadline</h4>
-                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-5">16 working days</p>
-                                        </div>
-                                    </div>
-                                    <div class="cost">
-                                        <img src="./img/money.svg" alt="Money">
-                                        <div class="works-slide__row-text-cost">
-                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-5">Cost</h4>
-                                            <p class="works-slide__row-text-cost-description">390$</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-5">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-5">Our task was to develop the front-end of the multi-page application with the possibility of supplementing it with text, pictures, as well as expanding it in the future.</p>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works-slide swiper-slide">
-                        <div class="works-slide__row">
-                            <a href="https://coins-buddy.vercel.app/" target="_blank" rel="noreferrer" class="works-slide__row-img">
-                                <img src='./img/slider/coins.jpg' alt="MBox">
-                                <div class="works__img-content">
-                                    <h4 class="works__img-text">React Js, Redux Toolkit, Ant Design, Rapid API</h4>
-                                </div>
-                            </a>
-                            <div class="works-slide__row-text">
-                                <a href="https://coins-buddy.vercel.app/" rel="noreferrer" target="_blank" class="works-slide__row-text-title">Coins Buddy - crypto portal</a>
-                                <div class="works-slide__row-param">
-                                    <div class="deadline">
-                                        <img src="./img/layer1.svg" alt="Time">
-                                        <div class="works-slide__row-text-deadline">
-                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-6">Deadline</h4>
-                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-6">4 working days</p>
-                                        </div>
-                                    </div>
-                                    <div class="cost">
-                                        <img src="./img/money.svg" alt="Money">
-                                        <div class="works-slide__row-text-cost">
-                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-6">Cost</h4>
-                                            <p class="works-slide__row-text-cost-description">240$</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-6">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-6">Create a website about cryptocurrency, where you can see the state of the market, evaluate the dynamics of cryptocurrency prices, read news about a specific token and see information about cryptocurrency exchanges.</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works-slide swiper-slide">
-                        <div class="works-slide__row">
-                            <a href="https://l1ghbe.github.io/mbox/dist/" target="_blank" rel="noreferrer" class="works-slide__row-img">
-                                <img src='./img/slider/mb.jpg' alt="MBox">
-                                <div class="works__img-content">
-                                    <h4 class="works__img-text">HTML, SCSS, Javascript, Gulp</h4>
-                                </div>
-                            </a>
-                            <div class="works-slide__row-text">
-                                <a href="https://l1ghbe.github.io/mbox/dist/" rel="noreferrer" target="_blank" class="works-slide__row-text-title">Concept: MBOX Cinema</a>
-                                <div class="works-slide__row-param">
-                                    <div class="deadline">
-                                        <img src="./img/layer1.svg" alt="Time">
-                                        <div class="works-slide__row-text-deadline">
-                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-2">Deadline</h4>
-                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-2">4 working days</p>
-                                        </div>
-                                    </div>
-                                    <div class="cost">
-                                        <img src="./img/money.svg" alt="Money">
-                                        <div class="works-slide__row-text-cost">
-                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-2">Cost</h4>
-                                            <p class="works-slide__row-text-cost-description">110$</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-2">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-2">To create a concept of a website that could be used as a news portal in the field of cinema.</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works-slide swiper-slide">
-                        <div class="works-slide__row">
-                            <a href="https://web-info.netlify.app/" target="_blank" rel="noreferrer" class="works-slide__row-img">
-                                <img src='./img/slider/web.jpg' alt="WEB">
-                                <div class="works__img-content">
-                                    <h4 class="works__img-text">React Js, Scss</h4>
-                                </div>
-                            </a>
-                            <div class="works-slide__row-text">
-                                <a href="https://web-info.netlify.app/" target="_blank" rel="noreferrer" class="works-slide__row-text-title">Concept: Web Info</a>
-                                <div class="works-slide__row-param">
-                                    <div class="deadline">
-                                        <img src="./img/layer1.svg" alt="Time">
-                                        <div class="works-slide__row-text-deadline">
-                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-3">Deadline</h4>
-                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-3">1 working day</p>
-                                        </div>
-                                    </div>
-                                    <div class="cost">
-                                        <img src="./img/money.svg" alt="Money">
-                                        <div class="works-slide__row-text-cost">
-                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-3">Cost</h4>
-                                            <p class="works-slide__row-text-cost-description">115$</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-3">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-3">To create a concept of a fully responsive website, using features from react, such as react hooks, react router, etc.</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works-slide swiper-slide">
-                        <div class="works-slide__row">
-                            <a href="https://l1ghbe.github.io/raw/" target="_blank" rel="noreferrer" class="works-slide__row-img">
-                                <img src='./img/slider/raw.jpg' alt="Raw">
-                                <div class="works__img-content">
-                                    <h4 class="works__img-text">HTML, SCSS, Javascript, GSAP</h4>
-                                </div>
-                            </a>
-                            <div class="works-slide__row-text">
-                                <a href="https://l1ghbe.github.io/raw/" target="_blank" rel="noreferrer" class="works-slide__row-text-title">Concept: RAW-Studio</a>
-                                <div class="works-slide__row-param">
-                                    <div class="deadline">
-                                        <img src="./img/layer1.svg" alt="Time">
-                                        <div class="works-slide__row-text-deadline">
-                                            <h4 class="works-slide__row-text-deadline-title lg-works-deadline-4">Deadline</h4>
-                                            <p class="works-slide__row-text-deadline-description lg-works-deadline-a-4">1 working day</p>
-                                        </div>
-                                    </div>
-                                    <div class="cost">
-                                        <img src="./img/money.svg" alt="Money">
-                                        <div class="works-slide__row-text-cost">
-                                            <h4 class="works-slide__row-text-cost-title lg-works-cost-4">Cost</h4>
-                                            <p class="works-slide__row-text-cost-description">120$</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="works-slide__row-text-task">
-                                    <h4 class="works-slide__row-text-task-title lg-works-task-4">Task</h4>
-                                    <p class="works-slide__row-text-task-description lg-works-description-4">To create a concept of a multi-page website with parallax effect and attractive appearance of elements for a studio that is engaged in design development.</p>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </section>
+            </section>
 
-        <section class="contact" id="contact">
-            <div class="circle-3"></div>
-            <div class="circle-4"></div>
-            <div class="contact-wrapper">
-                <h1 class="title__text contact-title lg-contact-title">Contact me</h1>
-                <form method="POST" action="/" data-netlify="true" id="form" name="form" class="form__body">
-                    <div class="contact-name">
-                        <input type="text" id="formName" name="name" autocomplete="off" title="Enter your name" required autocapitalize="on" class="form__input" placeholder=" ">
-                        <label for="formName" class="form__label lg-contact-name">Name</label>
+            <section class="contact" id="contact">
+                <div class="circle-3"></div>
+                <div class="circle-4"></div>
+                <div class="contact-wrapper">
+                    <h1 class="title__text contact-title lg-contact-title">
+                        Contact me
+                    </h1>
+                    <form
+                        method="POST"
+                        action="/"
+                        data-netlify="true"
+                        id="form"
+                        name="form"
+                        class="form__body"
+                    >
+                        <div class="contact-name">
+                            <input
+                                type="text"
+                                id="formName"
+                                name="name"
+                                autocomplete="off"
+                                title="Enter your name"
+                                required
+                                autocapitalize="on"
+                                class="form__input"
+                                placeholder=" "
+                            />
+                            <label
+                                for="formName"
+                                class="form__label lg-contact-name"
+                                >Name</label
+                            >
+                        </div>
+                        <div class="contact-email">
+                            <span class="validate-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </span>
+                            <input
+                                type="text"
+                                id="formEmail"
+                                name="email"
+                                autocomplete="off"
+                                title="Enter your email"
+                                class="form__input"
+                                placeholder=" "
+                            />
+                            <label for="formEmail" class="form__label"
+                                >Email</label
+                            >
+                        </div>
+                        <div class="contact-comment">
+                            <textarea
+                                name="message"
+                                id="formMessage"
+                                title="Leave a comment"
+                                class="form__textarea"
+                                placeholder=" "
+                            ></textarea>
+                            <label
+                                for="formMessage"
+                                class="form__textarea-label lg-contact-comment"
+                                >Comment</label
+                            >
+                        </div>
+                        <button type="submit" class="lg-submit">Send</button>
+                    </form>
+                </div>
+            </section>
+            <div class="popup-success">
+                <div class="popup-success__body">
+                    <a href="#" class="popup-success__btn">
+                        <i class="fas fa-times btn-close"></i>
+                    </a>
+                    <div class="popup-success__text">
+                        <div class="success-animation">
+                            <svg
+                                class="checkmark"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 52 52"
+                            >
+                                <circle
+                                    class="checkmark__circle"
+                                    cx="26"
+                                    cy="26"
+                                    r="25"
+                                    fill="none"
+                                />
+                                <path
+                                    class="checkmark__check"
+                                    fill="none"
+                                    d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                                />
+                            </svg>
+                        </div>
+                        <h2 class="popup-success__title">Thank you!</h2>
+                        <p class="popup-success__description">
+                            You message has been sent successfully!
+                        </p>
                     </div>
-                    <div class="contact-email">
-                        <span class="validate-circle">
-                            <i class="fas fa-check-circle"></i>
-                        </span>
-                        <input type="text" id="formEmail" name="email" autocomplete="off" title="Enter your email" class="form__input" placeholder=" ">
-                        <label for="formEmail" class="form__label">Email</label>
-                    </div>
-                    <div class="contact-comment">
-                        <textarea name="message" id="formMessage" title="Leave a comment" class="form__textarea" placeholder=" "></textarea>
-                        <label for="formMessage" class="form__textarea-label lg-contact-comment">Comment</label>
-                    </div>
-                    <button type="submit" class="lg-submit">Send</button>
-                </form>
-            </div>
-        </section>
-        <div class="popup-success">
-            <div class="popup-success__body">
-                <a href="#" class="popup-success__btn">
-                    <i class="fas fa-times btn-close" ></i>
-                </a>
-                <div class="popup-success__text">
-                    <div class="success-animation">
-                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
-                    </div>
-                    <h2 class="popup-success__title">Thank you!</h2>
-                    <p class="popup-success__description">You message has been sent successfully!</p>
                 </div>
             </div>
+            <div class="popup-wrong">
+                <div class="popup-wrong__body">
+                    <a href="#" class="popup-wrong__btn">
+                        <i class="fas fa-times btn-close"></i>
+                    </a>
+                    <div class="popup-wrong__text">
+                        <div class="error-image">
+                            <img
+                                src="./img/error-sign.png"
+                                class="error-sign"
+                                alt="Error"
+                            />
+                        </div>
+                        <h2 class="popup-wrong__title">Error</h2>
+                        <p class="popup-wrong__description">
+                            Something went wrong!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__rows">
+                        <h2 class="footer-text lg-copyright">
+                            &copy; 2022 All rights reserved
+                        </h2>
+                        <div class="footer-contacts">
+                            <a
+                                href="mailto:lighbewd@gmail.com"
+                                class="footer-contacts__mail"
+                                >lighbewd@gmail.com</a
+                            >
+                            <ul class="footer-contacts__list">
+                                <li class="footer-contacts__item">
+                                    <a
+                                        href="https://github.com/l1ghbe"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        class="footer-contacts__link icon-git"
+                                    >
+                                        <img
+                                            src="./img/Github.svg"
+                                            alt="Github"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="footer-contacts__item">
+                                    <a
+                                        href="https://vk.com/lighbe"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        class="footer-contacts__link"
+                                    >
+                                        <img src="./img/VK.svg" alt="VK" />
+                                    </a>
+                                </li>
+                                <li class="footer-contacts__item">
+                                    <a
+                                        href="https://www.facebook.com/l1ghbe/"
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        class="footer-contacts__link"
+                                    >
+                                        <img
+                                            src="./img/Facebook.svg"
+                                            alt="FB"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="footer-contacts__item">
+                                    <a
+                                        href="https://linkedin.com/in/lighbe/"
+                                        rel="noreferrer"
+                                        class="footer-contacts__link"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="./img/Linkedin.svg"
+                                            alt="LinkedIn"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="footer-contacts__item">
+                                    <a
+                                        href="https://www.instagram.com/l1ghbe/"
+                                        rel="noreferrer"
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        class="footer-contacts__link"
+                                    >
+                                        <img
+                                            src="./img/Instagram.svg"
+                                            alt="Inst"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="footer-contacts__item">
+                                    <a
+                                        href="https://t.me/lighbe"
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        class="footer-contacts__link"
+                                    >
+                                        <img
+                                            src="./img/Telegram.svg"
+                                            alt="Telegram"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <div class="popup-wrong">
-            <div class="popup-wrong__body">
-                <a href="#" class="popup-wrong__btn">
-                    <i class="fas fa-times btn-close" ></i>
-                </a>
-                <div class="popup-wrong__text">
-                    <div class="error-image">
-                        <img src="./img/error-sign.png" class="error-sign" alt="Error">
-                    </div>
-                    <h2 class="popup-wrong__title">Error</h2>
-                    <p class="popup-wrong__description">Something went wrong!</p>
-                </div>
-            </div>
-        </div>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__rows">
-                    <h2 class="footer-text lg-copyright">&copy; 2022 All rights reserved</h2>
-                    <div class="footer-contacts">
-                        <a href="mailto:lighbewd@gmail.com" class="footer-contacts__mail">lighbewd@gmail.com</a>
-                        <ul class="footer-contacts__list">
-                            <li class="footer-contacts__item">
-                                <a href="https://github.com/l1ghbe" target="_blank" rel="noreferrer" class="footer-contacts__link icon-git">
-                                    <img src="./img/Github.svg" alt="Github">
-                                </a>
-                            </li>
-                            <li class="footer-contacts__item">
-                                <a href="https://vk.com/lighbe" target="_blank" rel="noreferrer" class="footer-contacts__link">
-                                    <img src="./img/VK.svg" alt="VK">
-                                </a>
-                            </li>
-                            <li class="footer-contacts__item">
-                                <a href="https://www.facebook.com/l1ghbe/" rel="noreferrer" target="_blank" class="footer-contacts__link">
-                                    <img src="./img/Facebook.svg" alt="FB">
-                                </a>
-                            </li>
-                            <li class="footer-contacts__item">
-                                <a href="https://linkedin.com/in/lighbe/" rel="noreferrer" class="footer-contacts__link" target="_blank">
-                                    <img src="./img/Linkedin.svg" alt="LinkedIn">
-                                </a>
-                            </li>
-                            <li class="footer-contacts__item">
-                                <a href="https://www.instagram.com/l1ghbe/" rel="noreferrer"rel="noreferrer" target="_blank" class="footer-contacts__link">
-                                    <img src="./img/Instagram.svg" alt="Inst">
-                                </a>
-                            </li>
-                            <li class="footer-contacts__item">
-                                <a href="https://t.me/lighbe" rel="noreferrer" target="_blank" class="footer-contacts__link">
-                                    <img src="./img/Telegram.svg" alt="Telegram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] =
+                    m[i] ||
+                    function () {
+                        (m[i].a = m[i].a || []).push(arguments);
+                    };
+                m[i].l = 1 * new Date();
+                (k = e.createElement(t)),
+                    (a = e.getElementsByTagName(t)[0]),
+                    (k.async = 1),
+                    (k.src = r),
+                    a.parentNode.insertBefore(k, a);
+            })(
+                window,
+                document,
+                "script",
+                "https://mc.yandex.ru/metrika/tag.js",
+                "ym"
+            );
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    
-        ym(86585393, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/86585393" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+            ym(86585393, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+            });
+        </script>
+        <noscript
+            ><div>
+                <img
+                    src="https://mc.yandex.ru/watch/86585393"
+                    style="position: absolute; left: -9999px"
+                    alt=""
+                /></div
+        ></noscript>
+        <!-- /Yandex.Metrika counter -->
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/script.min.js"></script>
-
-
-
-</body>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/script.min.js"></script>
+    </body>
 </html>
