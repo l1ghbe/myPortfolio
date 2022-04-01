@@ -270,38 +270,38 @@ backgroundClose(popupWrong, "popup-wrong");
 
 // ---------------------
 
-ScrollReveal().reveal(".main__row-title", {
-    delay: 4300,
-    duration: 700,
-    origin: "left",
-    scale: 1,
-    easing: "ease-in-out",
-    distance: "100px",
-});
-ScrollReveal().reveal(".main__row-description", {
-    delay: 4400,
-    duration: 700,
-    origin: "left",
-    scale: 1,
-    easing: "ease-in-out",
-    distance: "100px",
-});
-ScrollReveal().reveal(".btn-main", {
-    delay: 4500,
-    duration: 700,
-    origin: "center",
-    scale: 1,
-    easing: "ease-in-out",
-    distance: "100px",
-});
-ScrollReveal().reveal(".main__row-img", {
-    delay: 4600,
-    duration: 700,
-    origin: "right",
-    scale: 1,
-    easing: "ease-in-out",
-    distance: "100px",
-});
+// ScrollReveal().reveal(".main__row-title", {
+//     delay: 4300,
+//     duration: 700,
+//     origin: "left",
+//     scale: 1,
+//     easing: "ease-in-out",
+//     distance: "100px",
+// });
+// ScrollReveal().reveal(".main__row-description", {
+//     delay: 4400,
+//     duration: 700,
+//     origin: "left",
+//     scale: 1,
+//     easing: "ease-in-out",
+//     distance: "100px",
+// });
+// ScrollReveal().reveal(".btn-main", {
+//     delay: 4500,
+//     duration: 700,
+//     origin: "center",
+//     scale: 1,
+//     easing: "ease-in-out",
+//     distance: "100px",
+// });
+// ScrollReveal().reveal(".main__row-img", {
+//     delay: 4600,
+//     duration: 700,
+//     origin: "right",
+//     scale: 1,
+//     easing: "ease-in-out",
+//     distance: "100px",
+// });
 ScrollReveal().reveal(".title__text", {
     // reset: true,
     origin: "bottom",
