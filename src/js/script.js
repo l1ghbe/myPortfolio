@@ -99,9 +99,7 @@ cardHtml.addEventListener("click", () => {
 cardJs.addEventListener("click", () => {
     selectProgress("JavaScript", "87%", "87%");
 });
-// cardPython.addEventListener('click', () => {
-//     selectProgress('Python', 'Basics', '100%', 'purple');
-// })
+
 cardPython.addEventListener("click", () => {
     selectProgress("React", "85%", "85%", "purple");
 });
@@ -268,42 +266,7 @@ function backgroundClose(popupEl, popupClass) {
 backgroundClose(popupSuccess, "popup-success");
 backgroundClose(popupWrong, "popup-wrong");
 
-// ---------------------
-
-// ScrollReveal().reveal(".main__row-title", {
-//     delay: 4300,
-//     duration: 700,
-//     origin: "left",
-//     scale: 1,
-//     easing: "ease-in-out",
-//     distance: "100px",
-// });
-// ScrollReveal().reveal(".main__row-description", {
-//     delay: 4400,
-//     duration: 700,
-//     origin: "left",
-//     scale: 1,
-//     easing: "ease-in-out",
-//     distance: "100px",
-// });
-// ScrollReveal().reveal(".btn-main", {
-//     delay: 4500,
-//     duration: 700,
-//     origin: "center",
-//     scale: 1,
-//     easing: "ease-in-out",
-//     distance: "100px",
-// });
-// ScrollReveal().reveal(".main__row-img", {
-//     delay: 4600,
-//     duration: 700,
-//     origin: "right",
-//     scale: 1,
-//     easing: "ease-in-out",
-//     distance: "100px",
-// });
 ScrollReveal().reveal(".title__text", {
-    // reset: true,
     origin: "bottom",
     duration: 1000,
     delay: 500,
